@@ -1,0 +1,20 @@
+.linear{
+    width: 300px;
+    height: 300px;
+    background-image:linear-gradient(violet,indigo,blue,green,yellow,orange,red 20%);
+}
+.radial{
+    width: 300px;
+    height: 300px;
+    background-image:repeating-radial-gradient(violet 5%,indigo 5%,blue 15%,green 20%,yellow 25%,orange 30%,red 35%);
+}
+.conic{
+     width: 300px;
+    height: 300px;
+    background-image:conic-gradient(at 50% 40%, violet,indigo,blue,green,yellow,orange,red); 
+}
+.both{
+    width: 300px;
+    height: 300px;
+    background:linear-gradient(violet,blue, transparent),linear-gradient(to right,rgb(130, 238, 132),rgb(255, 34, 0));
+}

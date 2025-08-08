@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aquaculture Caring</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    html {
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+.des{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: rgba(135, 231, 175, 0.395); */
+    padding: 50px 0px;
+    gap: 30px 0px;
+    /* box-shadow: 0px 0px 10px 5px rgba(173, 216, 230, 0.267); */
+    background-color: white;
+    /* margin-bottom: 50px; */
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    padding-left: 20px;
+    gap: 30px 0px;
+    animation: anime 0.8s linear 1;
+}
+.hov{
+   color: white;
+    background-color: #006064; 
+    border-radius: 5px; 
+    padding: 15px 10px; 
+    text-align: center; 
+    font-size: 20px; 
+    width: 200px;
+}
+ .hov:hover{
+   background-color: #d4f1f9;
+   color: #012c2e;
+   cursor: pointer;
+ }
+ @keyframes anime {
+   from{
+      transform: translateY(40px);
+      opacity: 0;
+   }
+   to{
+      transform: translateY(0px);
+      opacity: 1;
+   }
+ }
+.flock{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    /* background-color: rgba(255, 166, 0, 0.103); */
+    padding: 50px 0px;
+     background-color: #d4f1f9;
+}
+ .summarycards{
+    display: flex;flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+ }
+ .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+ }
+ .sc1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-left: 13px solid #006064;
+    border-radius: 20px;
+    transition: transform 0.5s linear;
+ }
+  .sc2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-left: 13px solid #006064;
+     border-radius: 20px;
+     transition: transform 0.5s linear;
+ }
+  .sc3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-left: 13px solid #006064;
+     border-radius: 20px;
+     transition: transform 0.5s linear;
+ }
+  .sc4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-left: 13px solid #006064;
+     border-radius: 20px;
+     transition: transform 0.5s linear;
+ }
+ .sc1:hover, .sc2:hover, .sc3:hover, .sc4:hover{
+   transform: translateY(-20px);
+    box-shadow: 0px 0px 10px 5px #65bfc2a0;
+  
+ }
+ .daily{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0px;
+     /* box-shadow: 0px 0px 10px 5px rgba(173, 216, 230, 0.267); */
+      background-color: #d4f1f9;
+      margin-top: 80px;
+ }
+ .both{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px 100px;
+ }
+ .formclass{
+     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 13px 20px;
+     border: 3px solid #006064;
+     color: #012c2e;;
+     font-size: 18px;
+     border-radius: 20px;
+     gap: 18px;
+     animation: anime1 0.8s linear 1;
+     background-color: white;
+ }
+ .formclass:hover, .environ:hover, .health1:hover, .health2:hover{
+    box-shadow: 0px 0px 10px 5px #65bfc2a0;
+ }
+ .environ{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+     border: 3px solid #006064;;
+     color: #012c2e;
+     font-size: 18px;
+     border-radius: 20px;
+     gap: 25px;
+     background-color: white;
+      animation: anime2 0.8s linear 1;
+ }
+ @keyframes anime1 {
+   from{
+      transform: translateX(-50px);
+      opacity: 0;
+   }
+   to{
+      transform: translateX(0px);
+      opacity: 1;
+   }
+ }
+  @keyframes anime2 {
+   from{
+      transform: translateX(50px);
+      opacity: 0;
+   }
+   to{
+      transform: translateX(0px);
+      opacity: 1;
+   }
+ }
+ .health{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* background-color: rgba(255, 166, 0, 0.082); */
+    padding: 50px 0px;
+     background-color: #d4f1f9;
+     margin-top: 50px;
+ }
+ .healthcards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 100px;
+ }
+ .health1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+     padding: 20px;
+     border: 3px solid #006064;
+      font-size: 18px;
+     border-radius: 20px;
+     gap: 25px;
+     color: #012c2e;
+     animation: anime1 0.8s linear 1;
+     background-color: white;
+
+ }
+ .health2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+     padding: 20px;
+     border: 3px solid #006064;;
+      font-size: 18px;
+     border-radius: 20px;
+     gap: 15px;
+     color: #012c2e;
+     animation: anime2 0.8s linear 1;
+      background-color: white;
+ }
+ .nutrition{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* background-color: rgba(47, 255, 0, 0.235); */
+    padding: 50px 0px;
+     /* box-shadow: 0px 0px 10px 5px rgba(173, 216, 230, 0.267); */
+      background-color: white;
+ }
+ .guide{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+    padding:10px;
+     box-shadow: 0px 0px 10px 5px #65bfc2a0;
+    border-radius: 30px;
+    animation: anime3 1s linear 1;
+ }
+ .essential{
+   display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+    padding:20px;
+    border: 2px solid #006064;;
+    border-radius: 30px;
+    background-color: white;
+    animation: anime3 1s linear 1;
+ }
+ @keyframes  anime3 {
+   from{
+      opacity: 0;
+   }
+   to{
+      opacity: 1;
+   }
+   
+ }
+ ul li{
+    font: 16px;
+    color: #012c2e;
+    padding-bottom: 10px;
+ }
+ .flexs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    padding-bottom: 20px;
+ }
+ .f1{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-left: 10px solid #006064;
+    text-align: center;
+    color: #012c2e;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform 0.5s linear;
+    /* padding: 10px; */
+ }
+ .f2{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-left: 10px solid #006064;
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #012c2e;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform 0.5s linear;
+    /* padding: 10px; */
+ }
+ .f3{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-left: 10px solid #006064;
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #012c2e;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform 0.5s linear;
+    /* padding: 10px; */
+ }
+  .f4{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-left: 10px solid #006064;
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #012c2e;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform 0.5s linear;
+    /* padding: 10px; */
+ }
+ .f1:hover, .f2:hover, .f3:hover, .f4:hover{
+   transform: translateY(-20px);
+    box-shadow: 0px 0px 10px 5px #65bfc2a0;
+ }
+.resource{
+     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    /* background-color: rgba(0, 255, 51, 0.08); */
+    padding: 50px 0px;
+     background-color: #d4f1f9;
+}
+.learning{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px 10px;
+    animation: anime3 1s linear 1;
+}
+.l1{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #006064;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #012c2e;
+    font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l2{
+     width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #006064;
+    border-radius: 20px;
+    text-decoration: none;
+     color: #012c2e;
+     font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l3{
+     width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #006064;
+    border-radius: 20px;
+    text-decoration: none;
+     color: #012c2e;
+     font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l4{
+     width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #006064;
+    border-radius: 20px;
+    text-decoration: none;
+     color: #012c2e;
+     font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l5{
+     width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #006064;
+    border-radius: 20px;
+    text-decoration: none;
+     color: #012c2e;
+     font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l6{
+     width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #006064;
+    border-radius: 20px;
+    text-decoration: none;
+     color: #012c2e;
+     font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l1:hover, .l2:hover, .l3:hover, .l4:hover, .l5:hover, .l6:hover{
+   box-shadow: 0px 0px 10px 5px #65bfc2a0;
+}
+@media (min-width:320px) and (max-width:500px){
+   img{
+      width: 300px;
+      height: 300px;
+   }
+   .formclass{
+      padding: 7px;
+   }
+   .guide{
+      padding: 0px;
+   }
+    .formclass{
+    padding: 5px 3px;
+   }
+   .l1, .l2, .l3, .l4, .l5, .l6{
+      width: 300px;
+      padding: 7px;
+   }
+}
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="des">
+                <div class="description">
+                    <div style="font-size: 40px; color: #006064;"><b>Holistic Aquaculture Management</b></div>
+                    <div style="font-size: 18px; color: #012c2e;">From routine tank checks to advanced aquatic health monitoring,<br> empower your aquafarm's productivity and sustainability with our<br> expert guidance and smart tools.</div>
+                    <button onclick="flocksection()" class="hov"><b>Get Started</b></button>
+                </div>
+                <img src="./vecteezy_the-lively-vibrant-koi-fish-elegantly-move-through-the_52349953.jpg" width="600px" height="400px" style="border-radius: 10px; border: 1px groove burlywood; animation: anime 0.8s linear 1;">
+            </div>
+        </section>
+        <section id="sec">
+            <div class="flock">
+                <div style="font-size: 40px; color: #006064; text-align: center;"><b>Aquafarm Overview</b></div>
+                <div style="font-size: 18px; color: #012c2e; text-align: center;">Your aquatic species' health, yield potential, and daily tasks at a glance.</div>
+                <hr/>
+                <div class="summarycards">
+                    <div class="cards">
+                        <div class="sc1">
+                            <div style="font-size: 50px;">🐠</div>
+                            <div style="font-size: 20px; color: #012c2e;">Total Production Units</div>
+                            <div style="font-size: 24px; color: #006064;"><b>15 Ponds/Tanks</b></div>
+                        </div>
+                        <div class="sc2">
+                            <div style="font-size: 50px;">🦐</div>
+                            <div style="font-size: 20px; color: #012c2e;">Expected Aquaculture Yield</div>
+                            <div style="font-size: 24px; color: #006064;"><b>200 kg / Week</b></div>
+                        </div>
+                        <div class="sc3">
+                            <div style="font-size: 50px;">💧</div>
+                            <div style="font-size: 20px; color: #012c2e;">Aquatic & Water Health</div>
+                            <div style="font-size: 24px; color: #006064;"><b>Excellent</b></div>
+                            <div style="font-size: 20px; color: #012c2e;"><b>Monitoring 3 Ponds</b></div>
+                        </div>
+                        <div class="sc4">
+                            <div style="font-size: 50px;">📝</div>
+                            <div style="font-size: 20px; color: #012c2e;">Pending Aquafarm Tasks</div>
+                            <div style="font-size: 24px; color: #006064;"><b>2/7 Completed</b></div>
+                            <div style="font-size: 20px; color: #012c2e;"><b>5 Pending</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="daily">
+                <div style="font-size: 40px; color: #006064; text-align: center;"><b>Daily Aquafarm Management</b></div>
+                <div class="both">
+                    <form class="formclass">
+                        <label style="font-size: 24px; color: #006064;"><b>📝 Daily Aquaculture Checklist</b></label>
+                        <div><input type="checkbox" style="width: 20px; height: 20px;">
+                        <label>Tank/Pond Inspected</label></div>
+                        <div><input type="checkbox" style="width: 20px; height: 20px;">
+                        <label>Filtration System Checked</label></div>
+                        <div><input type="checkbox" style="width: 20px; height: 20px;">
+                        <label>Feed Level Checked & Dispensed</label></div>
+                        <div><input type="checkbox" style="width: 20px; height: 20px;">
+                        <label>Water Quality Test Performed (Enter Parameters)</label></div>
+                        <div><input type="text" placeholder="pH, Ammonia, Nitrite, etc." style="width: 100px; height: 50px;padding: 5px; border-radius: 5px; border: 2px solid #006064;"></div>
+                        <div><input type="checkbox" style="width: 20px; height: 20px;">
+                        <label>Species Behavior Observed</label></div>
+                        <div><input type="checkbox" style="width: 20px; height: 20px;">
+                        <label>Mortality Count Logged</label></div>
+                        <textarea placeholder="Daily observations or notes (e.g., unusual behavior, water changes)..." style="width: 300px; height: 100px; border-radius: 5px; padding: 5px; border: 2px solid #006064;"></textarea>
+                        <center><input onclick="msgs()" type="submit" value="Save Checklist" style="padding: 10px; font-size: 18px; border-radius: 5px; background-color: #006064; color: white;"></center>
+                    </form>
+                    <form class="environ">
+                        <label style="font-size: 24px; color: #006064;"><b>☀️ Environmental Monitoring</b></label>
+                        <div><label>Water Temperature: </label><span style="font-size: 18px; color: #006064;"> <b>28<sup>&SmallCircle;</sup>C 🌡️</b></span></div>
+                        <div><input type="range" style="width: 100%;"></div>
+                        <div><label>pH Level: </label><span style="font-size: 18px; color: #006064;"> <b>7.5 🧪</b></span></div>
+                        <div><input type="range" style="width: 100%;"></div>
+                        <div><label>Dissolved Oxygen:</label></div><select style="width: 100%; height: 50px; border-radius: 10px; border: 2px solid #006064; padding-left: 10px;">
+                        <option>Optimal</option>
+                        <option>Low - Aeration Needed</option>
+                        <option>High - Monitor Algae</option>
+                        </select>
+                        <div><label>Water Salinity:</label></div><select style="width: 100%; height: 50px; border-radius: 10px; border: 2px solid #006064; padding-left: 10px;">
+                        <option>Freshwater</option>
+                        <option>Brackish</option>
+                        <option>Saltwater</option>
+                        </select>
+                        <center><input onclick="msg()" type="submit" value="Update Settings" style="padding: 10px; font-size: 18px; border-radius: 5px; background-color: #006064; color: white;"></center>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="health">
+                <div style="font-size: 40px; color: #006064; text-align: center;"><b>Aquatic Species Health Monitoring</b></div>
+                <div style="font-size: 18px; color: #012c2e; text-align: center;">Quickly assess aquatic species and water health and log any concerns.</div>
+                <div class="healthcards">
+                    <form class="health1">
+                        <label style="font-size: 24px; color: #006064;"><b>👩‍⚕️ Aquafarm Health Summary</b></label>
+                        <div><label style="color: #006064;"><b>Overall Status: </b></label><span>Healthy</span></div>
+                        <div><label style="color: #006064;"><b>Tanks/Ponds Under Observation: </b></label><span>3 Units</span></div>
+                        <div><label style="color: #006064;"><b>Recent Health Log Entries: </b></label><span>1 in last 24 hrs</span></div>
+                        <center><input type="submit" value="View Full Health Log" style="padding: 10px; font-size: 18px; border-radius: 5px; background-color: #006064; color: white;"></center>
+                    </form>
+                    <form class="health2">
+                        <label style="font-size: 24px; color: #006064;"><b>🐠 Aquatic Observation Log</b></label>
+                        <div><label>Subject:</label></div><select style="width: 100%; height: 50px; border-radius: 10px; border: 2px solid #006064; padding-left: 10px;">
+                        <option>Entire Aquafarm</option>
+                        <option>Specific Pond/Tank(s)</option>
+                        <option>Specific Species/Group</option>
+                        </select> <div><label>Unit ID(s):</label></div><input type="text" placeholder="e.g., Tank #5, Tilapia Pond" style="width: 100%; height: 50px; border-radius: 10px; border: 2px solid #006064; padding-left: 10px;">
+                        <div><label>Type of Observation: </label></div><select style="width: 100%; height: 50px; border-radius: 10px; border: 2px solid #006064; padding-left: 10px;">
+                        <option>Routine Check</option>
+                        <option>Disease Symptom</option>
+                        <option>Parasite Infestation</option>
+                        <option>Behavior Anomaly</option>
+                        <option>Water Quality Issue</option>
+                        <option>Mortality Event</option>
+                        </select>
+                        <div><label>Notes: </label></div><textarea placeholder="Describe observation, symptoms or treatment details..." style="width: 100%; height: 100px; border-radius: 10px; border: 2px solid #006064; padding-left: 10px;"></textarea>
+                        <center><input onclick="sub()" type="submit" value="Submit Observation" style="padding: 10px; font-size: 18px; border-radius: 5px; background-color: #006064; color: white;"></center>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="nutrition">
+                <div style="font-size: 40px; color: #006064; text-align: center;"><b>Aquatic Nutrition & Water Guidelines</b></div>
+                <div style="font-size: 18px; color: #012c2e; text-align: center;">Understand the vital nutritional needs of your aquatic species and optimal water conditions for growth and health.</div>
+                <div class="guide">
+                    <div class="essential">
+                    <div style="font-size: 30px; color: #006064;"><b>💧 Essential Aquaculture Principles</b></div>
+                    <ul type="none">
+                        <li>✔️ Water Quality Testing: Regularly monitor pH, ammonia, nitrite, nitrate, dissolved oxygen, and temperature.</li>
+                        <li>✔️ Balanced Feeding: Provide species-appropriate feed in correct quantities to ensure optimal growth and minimize waste.</li>
+                        <li>✔️ Proper Aeration: Ensure adequate dissolved oxygen levels through aerators or circulation for species respiration.</li>
+                        <li>✔️ Waste Management: Implement filtration and waste removal systems to maintain clean water and prevent disease.</li>
+                        <li>✔️ Biosecurity Measures: Prevent introduction and spread of diseases through strict protocols for new stock and equipment.</li>
+                    </ul>
+                    </div>
+                    <div style="font-size: 30px; color: #006064;"><b>🌊 Common Feeds & Water Treatments</b></div>
+                    <div class="flexs">
+                        <div class="f1">
+                            <div style="font-size: 24px; color: #006064;"><b>Balanced Pellets</b></div>
+                            <div>Complete feeds formulated with proteins, fats, vitamins, and minerals for specific species.</div>
+                        </div>
+                        <div class="f2">
+                            <div style="font-size: 24px; color: #006064;"><b>Live Feeds</b></div>
+                            <div>Organisms like artemia, rotifers, or daphnia, often used for larval stages or sensitive species.</div>
+                        </div>
+                        <div class="f3">
+                            <div style="font-size: 24px; color: #006064;"><b>Probiotics</b></div>
+                            <div>Beneficial microbes added to water or feed to improve gut health and water quality.</div>
+                        </div>
+                        <div class="f4">
+                            <div style="font-size: 24px; color: #006064;"><b>Water Conditioners</b></div>
+                            <div>Chemicals or natural products used to adjust pH, remove chlorine, or bind heavy metals.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="resource">
+                <div style="font-size: 40px; color: #006064; text-align: center;"><b>Learning Resources</b></div>
+                <div style="font-size: 18px; color: #012c2e; text-align: center;">Expand your knowledge with guides, videos, external links, and community discussions on sustainable aquaculture.</div>
+                <div class="learning">
+                    <a class="l1" href="https://www.fao.org/inland-fisheries/topic/detail/ru/c/1142712/">
+                        <div style="font-size: 40px;">📑</div>
+                        <div style="font-size: 20px; color: #006064;"><b>Guide: Common Aquatic Animal Diseases</b></div>
+                        <div>Learn to identify, prevent, and treat prevalent health issues in various aquatic species.</div>
+                    </a>
+                    <a class="l2" href="https://youtu.be/pPRGt2wo2Mo?si=vavKEab-gbhBZqSF">
+                        <div style="font-size: 40px;">▶️</div>
+                        <div style="font-size: 20px; color: #006064;"><b>Video: Water Quality Parameters in Aquaculture</b></div>
+                        <div>Step-by-step tutorial on testing and maintaining optimal water quality for your aquafarm.</div>
+                    </a>
+                    <a class="l3" href="https://www.fao.org/fishery/en">
+                        <div style="font-size: 40px;">🔗</div>
+                        <div style="font-size: 20px; color: #006064;"><b>External Link: FAO Aquaculture Resources</b></div>
+                        <div>Access international resources and scientific research on modern aquaculture practices.</div>
+                    </a>
+                    <a class="l4" href="https://www.globalseafood.org/">
+                        <div style="font-size: 40px;">🧑‍🤝‍🧑</div>
+                        <div style="font-size: 20px; color: #006064;"><b>Community: Global Aquaculture Alliance</b></div>
+                        <div>Connect with industry experts, share insights, and get advice on sustainable aquaculture.</div>
+                    </a>
+                    <a class="l5" href="https://foodforwardndcs.panda.org/food-production/implementing-sustainable-aquaculture-management-systems/">
+                        <div style="font-size: 40px;">📰</div>
+                        <div style="font-size: 20px; color: #006064;"><b>Article: Sustainable Aquaculture Practices</b></div>
+                        <div>Discover environmentally responsible methods for improving aquatic production and ecosystem health.</div>
+                    </a>
+                    <a class="l6" href="https://worldfishcenter.org/publication/worldfish-biosecurity-checklist">
+                        <div style="font-size: 40px;">📃</div>
+                        <div style="font-size: 20px; color: #006064;"><b>Checklist: Aquafarm Biosecurity Measures</b></div>
+                        <div>Implement essential measures to protect your aquatic stock from diseases and contaminants.</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function msg()
+        {
+            alert("Water Temperature: 28 Degrees Celsius pH Level: 7.5");
+            alert("Environmental settings updated successfully!");
+        }
+        function msgs()
+        {
+            alert("Daily Checklist saved successfully!");
+        }
+        function sub()
+        {
+            alert("Observation submitted successfully!");
+        }
+        function flocksection()
+        {
+            const flock=document.getElementById("sec");
+            flock.scrollIntoView({behavior : "smooth"});
+        }
+    </script>
+</body>
+</html>

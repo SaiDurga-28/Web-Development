@@ -1,0 +1,108 @@
+.card{
+    width: 450px;
+    height:250px;
+    border: 3px solid rgba(128, 128, 128, 0.633);
+    border-radius: 20px;
+    position: relative;
+    top: 100px;
+    box-shadow: 0px 0px 5px 3px rgba(128, 128, 128, 0.649);
+    background-color: rgba(14, 178, 233, 0.237);
+}
+.design1{
+    width: 180px;
+    height: 120px;
+    background-color: rgba(0, 0, 255, 0.507);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 28px;
+}
+.design2{
+    width: 130px;
+    height: 130px;
+    border-radius: 130px;
+    border: 5px solid rgb(0, 157, 255);
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+}
+.design3{
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    border: 5px solid white;
+    position: absolute;
+    top: 0px;
+    background-image: url(23P31A05022222.png);
+    background-size: contain;
+}
+.name{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    position: absolute;
+    top:15px;
+    left: 15px;
+    color: blue;
+    text-shadow: 0px 0px 3px rgb(0, 229, 255);
+}
+.name1{
+    font-family: lobster;
+    font-size: 20px;
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    color: rgb(10, 84, 157);
+}
+.name2{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    border-radius: 35px;
+    top: 100px;
+    left: 15px;
+    background-color: rgba(0, 132, 255, 0.553);
+}
+.name3{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    border-radius: 35px;
+    top: 140px;
+    left: 15px;
+    background-color: rgba(0, 132, 255, 0.553);
+}
+.name4{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    border-radius: 35px;
+    top: 180px;
+    left: 15px;
+    background-color: rgba(0, 132, 255, 0.553);
+}
+.name5{
+    font-family: 'Franklin Gothic Medium';
+    position: absolute;
+    top: 108px;
+    left: 53px;
+    color: rgb(13, 144, 181);
+    font-size: 17px;
+}
+.name6{
+    font-family: 'Franklin Gothic Medium';
+    position: absolute;
+    top: 145px;
+    left: 60px;
+    color: rgb(13, 144, 181);
+    font-size: 17px;
+}
+.name7{
+    font-family: 'Franklin Gothic Medium';
+    position: absolute;
+    top: 185px;
+    left: 55px;
+    color: rgb(13, 144, 181);
+    font-size: 17px;
+}

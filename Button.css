@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    z-index: 1;
+    position: relative;
+    /* overflow: hidden; */
+    /* font-size: 20px; */
+    border: 3px solid black;
+    border: 10px;
+    padding-top: 8px;
+    /* padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px; */
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 0.192);
+    background-color: black;
+    color: white;
+}
+.button::before{
+    z-index: -1;
+    content:"";
+    width: 50px;
+    height: 50px;
+    background-color: rgba(125, 122, 122, 0.333);
+    opacity: 1.2;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(-50px) translateY(15px);
+    transition: all 1s linear;
+    box-shadow: 0px 0px 5px 0px gainsboro;
+}
+.button:hover::before{
+    transform: translateX(-12px) translateY(-20px);
+    border-radius: 10px;
+    width: 90px;
+}

@@ -1,0 +1,75 @@
+.para1{
+    color: rgb(255,0,0);
+}
+.para2{
+    color: rgba(255,0,0,0.8);
+}
+.para3{
+    color: rgba(255,0,0,0.6);
+}
+.para4{
+    color: rgba(255,0,0,0.4);
+}
+.para5{
+    color: rgba(255,0,0,0.2);
+}
+.para6{
+    color: #00ff00;
+}
+.para7{
+    color: #00ff0080;
+}
+.para8{
+    color: #00ff0060;
+}
+.para9{
+    color: #00ff0040;
+}
+.para10{
+    color: #00ff0020;
+}
+.para11{
+    color: hsl(240,50%,50%);
+}
+.para12{
+    color: hsla(240,50%,50%,0.8);
+}
+.para13{
+    color: hsla(240,50%,50%,0.6);
+}
+.para14{
+    color:hsla(240,50%,50%,0.4);
+} 
+.para15{
+    color:hsl(240,50%,50%,0.2);
+} 
+.para16{
+    color: rgb(255,255,0);
+}
+.para17{
+    color: rgba(255,255,0,0.8);
+}
+.para18{
+    color: rgba(255,255,0,0.6);
+}
+.para19{
+    color: rgba(255,255,0,0.4);
+}
+.para20{
+    color: rgba(255,255,0,0.2);
+}
+.para21{
+    color: rgb(240,30,255);
+}
+.para22{
+    color: rgba(240,30,255,0.8);
+}
+.para23{
+    color: rgba(240,30,255,0.6);
+}
+.para24{
+    color: rgba(240,30,255,0.4);
+}
+.para25{
+    color: rgba(240,30,255,0.3);
+}

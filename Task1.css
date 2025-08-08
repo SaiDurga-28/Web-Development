@@ -1,0 +1,15 @@
+.head{
+    text-decoration: underline red;
+    text-transform: uppercase;
+    text-shadow: 0px 2px blueviolet;
+}
+.para{
+    text-emphasis: 3px;
+    text-indent: 30px;
+    color: purple;
+    letter-spacing: 10px;
+    line-height: 30px;
+    word-spacing: 10px;
+    text-align: justify;
+    text-decoration: underline dashed yellowgreen;
+}

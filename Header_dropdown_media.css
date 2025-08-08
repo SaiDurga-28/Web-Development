@@ -1,0 +1,118 @@
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: relative;
+    top: 0px;
+}
+.logo{
+    width: 220px;
+    height: 70px;
+    background-image: url("./2.png");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    cursor:pointer;
+}
+.mymaya{
+    position: absolute;
+    top: 40px;
+    left: 310px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.895);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 1s linear;
+}
+.owlcode{
+    position: absolute;
+    top: 40px;
+    left: 440px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.895);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 1s linear;
+}
+.aptlogic{
+    position: absolute;
+    top: 40px;
+    left: 580px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.895);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 1s linear;
+}
+
+.contact{
+    position: absolute;
+    top: 40px;
+    left: 720px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.895);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 1s linear;
+}
+.login{
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 16px;
+    color: white;
+    padding-top: 15px;
+    text-align: center;
+    background-color: green;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor:pointer;
+    /* transition: background-color 1s linear; */
+}
+.login:hover{
+    background-color: rgba(14, 176, 14, 0.522);
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: green;
+}
+.icon{
+    display: none;
+     position: absolute;
+    top: 30px;
+    right: 130px;
+    font-size: 30px;
+}
+.i1{
+    display: none;
+    font-size: 20px;
+}
+.icon:hover .i1{
+    display: block;
+}
+.i1:hover{
+    color: white;
+    background-color: gray;
+}
+@media (max-width:768px){
+  .mymaya{
+    display: none;
+  }
+  .owlcode{
+    display: none;
+  }
+  .aptlogic{
+    display: none;
+  }
+  .contact{
+    display: none;
+  }
+  .login{
+    right: 300px;
+  }
+  .icon{
+    display: block;
+  }
+}

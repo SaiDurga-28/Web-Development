@@ -1,0 +1,66 @@
+
+.header{
+    width: 100%;
+    border: 1px solid black;
+    background-color: rgb(255, 153, 0);
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    background-image: url("./company.png") ;
+    position: relative;
+    border-radius: 50px;
+    top: 0px;
+    left: 30px;
+    background-size: contain;
+}
+.c1{
+    position: absolute;
+    top: 30px;
+    left: 300px;
+    font-size: 30px;
+}
+.c2{
+    position: absolute;
+    top:30px;
+    left: 450px;
+    font-size: 30px;
+}
+.c3{
+    position: absolute;
+    top: 30px;
+    left: 620px;
+    font-size: 30px;
+}
+.c4{
+    position: absolute;
+    top: 30px;
+    left: 850px;
+    font-size: 30px;
+}
+.c11{
+    display: none;
+    text-align: center;
+}
+.c11:hover{
+    background-color: rgb(244, 131, 10);
+    color: white;
+}
+.c1:hover .c11, .c2:hover .c11, .c3:hover .c11, .c4:hover .c11, .profile:hover .sub11{
+    display: block;
+}
+.profile{
+    position: fixed;
+    right: 100px;
+    top: 30px;
+    font-size: 50px;
+}
+.sub11{
+    display: none;
+    font-size: 30px;
+    text-align: center;
+}
+.sub11:hover{
+     background-color: rgb(244, 131, 10);
+     color: white;
+}

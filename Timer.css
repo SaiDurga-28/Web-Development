@@ -1,0 +1,46 @@
+body{
+    display: flex;
+     justify-content: center;
+    align-items: center;
+}
+.timer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  background-image: linear-gradient(rgb(231, 133, 231),white,plum);
+    justify-content: center;
+   align-items: center;
+   width: 300px;
+    height: 230px;
+    border-radius: 30px;
+}
+.time{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   align-items: center;
+   width: 230px;
+    height: 100px;
+    border-radius: 30px;
+    border: 2px  dashed black;
+   background-image: linear-gradient(pink,white,pink);
+   animation: anime 1s linear infinite;
+
+}
+@keyframes anime {
+   from{
+    transform: translateY(20px);
+   }   
+   to{
+    transform: translateY(0px);
+   } 
+}
+.minutes, .seconds{
+    width: 100px;
+    height: 100px;
+   border-radius: 20px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

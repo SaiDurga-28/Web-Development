@@ -1,0 +1,28 @@
+.p1{
+    width: 100%;
+    height: 300px;
+    background-color: blueviolet;
+}
+.p2{
+    width: 100%;
+    height: 50px;
+    background-color: greenyellow;
+    position: sticky;
+    top: 30px;
+    /* left: 30px; */
+}
+.p3{
+    width: 100%;
+    height: 300px;
+    background-color: aqua;
+}
+.p4{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(255, 0, 179);
+}
+.p5{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(255, 136, 0);
+}

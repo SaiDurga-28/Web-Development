@@ -1,0 +1,46 @@
+/* .hover{
+    width: 100px;
+    height:100px;
+    background-color: red;
+}
+.hover:hover{
+    background-color: blue;
+    border-radius: 100px;
+}
+button:active{
+    background-color: blueviolet;
+}
+input:focus{
+    background-color: aqua;
+}
+.parent :nth-child(5){
+    color: rgb(94, 255, 0);
+}
+.demo{
+    color: aqua;
+}
+h1:not(.demo){
+    color: red;
+} */
+/* .test div:nth-child(2){
+    color: aqua;
+} */
+/* .parent{
+    width: 400px;
+    height: 400px;
+    border: 5px solid black;
+}
+.child1{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 51, 0);
+    
+}
+.child2{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
+.parent:hover .child2{
+    background-color: aqua;
+} */

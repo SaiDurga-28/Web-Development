@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    perspective: 1000px;
+}
+.cube{
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    position: relative;
+    animation: myanimation 5s infinite linear;
+}
+@keyframes myanimation{
+    100%{
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+.face {
+    width: 300px;
+    height: 300px;
+    border: 3px solid white;
+    position: absolute;
+    opacity: 0.9;
+    display: grid;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 3px;
+}
+.face div{
+    border: 3px solid white;
+    border-radius: 7px;
+}
+.left{
+      background-color: red;
+   transform: rotateY(90deg) translateZ(150px);
+}
+.right{
+      background-color: blue;
+   transform: rotateY(90deg) translateZ(-150px);
+}
+.top{
+      background-color: orange;
+   transform: rotateX(90deg) translateZ(150px);
+}
+.bottom{
+      background-color: green;
+   transform: rotateX(90deg) translateZ(-150px);
+}
+.front{
+      background-color: yellow;
+    transform: translateZ(150px);
+}
+.back{
+      background-color: white;
+    transform: translateZ(-150px);
+}

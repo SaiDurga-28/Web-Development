@@ -1,0 +1,30 @@
+/* .translate{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transform: translate(100px,50px);
+} */
+/* .skewness{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transform: skew(30deg,45deg);
+} */
+ /* .scale{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transform: scale(5,10);
+} */
+ /* /* .rotate{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transform: rotate(70deg,80deg) 
+ } */
+  .matrix{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transform: matrix(1,0,0,1,50,70);
+  }

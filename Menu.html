@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Menu</title>
+        <link rel="stylesheet" href="Menu.css">
+    </head>
+    <body>
+        <button onclick="Open()">OpenMenu</button>
+        <div class="menu_options">
+            <span onclick="Close()">&times;</span>
+            <div>Home</div>
+            <div>About</div>
+            <div>Services</div>
+            <div>Contact</div>
+        </div>
+        <script>
+            function Close(){
+                document.getElementsByClassName("menu_options")[0].style.left="-220px";
+            }
+             function Open(){
+                document.getElementsByClassName("menu_options")[0].style="left:0px";
+            }
+        </script>
+    </body>
+</html>

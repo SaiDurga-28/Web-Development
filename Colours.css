@@ -1,0 +1,21 @@
+.para1{
+    color: purple;
+}
+.para2{
+    color: rgb(200,120,240);
+}
+.para3{
+    color: rgba(240,100,20,0.5);
+}
+.para4{
+    color: #ff89ff;
+}
+.para5{
+    color:#ff89ff55;
+}
+.para6{
+    color: hsl(150,50%,20%);
+}
+.para7{
+    color: hsla(150,50%,20%,0.5);
+}

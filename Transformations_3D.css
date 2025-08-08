@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent{
+    transform-style: preserve-3d;
+    perspective: 100px;
+    perspective-origin: left;
+    border: 3px solid black;
+}
+.d{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    /* transform: rotate(10deg); */
+    transform: rotatex(10deg);
+    color: white;
+    text-align: justify;
+    /* transform-origin: 100px 100px; */
+}

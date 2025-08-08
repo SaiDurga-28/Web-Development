@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+}
+.menu_options{
+    position: absolute;
+    top:0px;
+    left:-220px;
+    width: 200px;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: end;
+    background-color: gray;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+}
+.menu_options div{
+    border-bottom: 3px solid white;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+.menu_options div:hover{
+    background-color: rgba(198, 20, 20, 0.441);
+}
+span{
+    font-size: 40px;
+    cursor: pointer;
+    width: fit-content;
+}

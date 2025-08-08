@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Poultry Caring</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    html {
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+.des{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: rgba(135, 231, 175, 0.395); */
+    padding: 50px 0px;
+    gap: 30px 0px;
+    /* box-shadow: 0px 0px 10px 5px rgba(173, 216, 230, 0.267); */
+    background-color: white;
+    /* margin-bottom: 50px; */
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    padding-left: 20px;
+    gap: 30px 0px;
+    animation: anime 0.8s linear 1;
+}
+.hov{
+   color: white;
+    background-color:    #bf360c; 
+    border-radius: 5px; 
+    padding: 15px 10px; 
+    text-align: center; 
+    font-size: 20px; 
+    width: 200px;
+}
+ .hov:hover{
+   background-color: #ffe9cc;
+   color:    #bf360c;
+   cursor: pointer;
+ }
+ @keyframes anime {
+   from{
+      transform: translateY(40px);
+      opacity: 0;
+   }
+   to{
+      transform: translateY(0px);
+      opacity: 1;
+   }
+ }
+.flock{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    /* background-color: rgba(255, 166, 0, 0.103); */
+    padding: 50px 0px;
+     background-color: #ffe9cc;
+}
+ .summarycards{
+    display: flex;flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+ }
+ .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+ }
+ .sc1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-left: 13px solid    #bf360c;
+    border-radius: 20px;
+    transition: transform 0.5s linear;
+ }
+  .sc2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-left: 13px solid    #bf360c;
+     border-radius: 20px;
+     transition: transform 0.5s linear;
+ }
+  .sc3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-left: 13px solid    #bf360c;
+     border-radius: 20px;
+     transition: transform 0.5s linear;
+ }
+  .sc4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-left: 13px solid    #bf360c;
+     border-radius: 20px;
+     transition: transform 0.5s linear;
+ }
+ .sc1:hover, .sc2:hover, .sc3:hover, .sc4:hover{
+   transform: translateY(-20px);
+    box-shadow: 0px 0px 10px 5px #cf917f;
+  
+ }
+ .daily{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0px;
+     /* box-shadow: 0px 0px 10px 5px rgba(173, 216, 230, 0.267); */
+      background-color: #ffe9cc;
+      margin-top: 80px;
+ }
+ .both{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px 100px;
+ }
+ .formclass{
+     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 13px 20px;
+     border: 3px solid    #bf360c;
+     color:   #742006;
+     font-size: 18px;
+     border-radius: 20px;
+     gap: 18px;
+     animation: anime1 0.8s linear 1;
+     background-color: white;
+ }
+ .formclass:hover, .environ:hover, .health1:hover, .health2:hover{
+     box-shadow: 0px 0px 10px 5px #cf917f;
+  
+ }
+ .environ{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+     border: 3px solid    #bf360c;;
+     color: #742006;
+     font-size: 18px;
+     border-radius: 20px;
+     gap: 25px;
+     background-color: white;
+      animation: anime2 0.8s linear 1;
+ }
+ @keyframes anime1 {
+   from{
+      transform: translateX(-50px);
+      opacity: 0;
+   }
+   to{
+      transform: translateX(0px);
+      opacity: 1;
+   }
+ }
+  @keyframes anime2 {
+   from{
+      transform: translateX(50px);
+      opacity: 0;
+   }
+   to{
+      transform: translateX(0px);
+      opacity: 1;
+   }
+ }
+ .health{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* background-color: rgba(255, 166, 0, 0.082); */
+    padding: 50px 0px;
+     background-color: #ffe9cc;
+     margin-top: 50px;
+ }
+ .healthcards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 100px;
+ }
+ .health1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+     padding: 20px;
+     border: 3px solid    #bf360c;
+      font-size: 18px;
+     border-radius: 20px;
+     gap: 25px;
+     color: #742006;
+     animation: anime1 0.8s linear 1;
+     background-color: white;
+
+ }
+ .health2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+     padding: 20px;
+     border: 3px solid    #bf360c;;
+      font-size: 18px;
+     border-radius: 20px;
+     gap: 15px;
+     color: #742006;
+     animation: anime2 0.8s linear 1;
+      background-color: white;
+ }
+ .nutrition{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* background-color: rgba(47, 255, 0, 0.235); */
+    padding: 50px 0px;
+     /* box-shadow: 0px 0px 10px 5px rgba(173, 216, 230, 0.267); */
+      background-color: white;
+ }
+ .guide{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+    padding:10px;
+      box-shadow: 0px 0px 10px 5px #cf917f;
+  
+    border-radius: 30px;
+    animation: anime3 1s linear 1;
+ }
+ .essential{
+   display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+    padding:20px;
+    border: 2px solid    #bf360c;;
+    border-radius: 30px;
+    background-color: white;
+    animation: anime3 1s linear 1;
+ }
+ @keyframes  anime3 {
+   from{
+      opacity: 0;
+   }
+   to{
+      opacity: 1;
+   }
+   
+ }
+ ul li{
+    font: 16px;
+    color: #742006;
+    padding-bottom: 10px;
+ }
+ .flexs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    padding-bottom: 20px;
+ }
+ .f1{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-left: 10px solid    #bf360c;
+    text-align: center;
+    color: #742006;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform 0.5s linear;
+    /* padding: 10px; */
+ }
+ .f2{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-left: 10px solid    #bf360c;
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #742006;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform 0.5s linear;
+    /* padding: 10px; */
+ }
+ .f3{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-left: 10px solid    #bf360c;
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #742006;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform 0.5s linear;
+    /* padding: 10px; */
+ }
+  .f4{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-left: 10px solid    #bf360c;
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #742006;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform 0.5s linear;
+    /* padding: 10px; */
+ }
+ .f1:hover, .f2:hover, .f3:hover, .f4:hover{
+   transform: translateY(-20px);
+     box-shadow: 0px 0px 10px 5px #cf917f;
+  
+ }
+.resource{
+     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    /* background-color: rgba(0, 255, 51, 0.08); */
+    padding: 50px 0px;
+     background-color: #ffe9cc;
+}
+.learning{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px 10px;
+    animation: anime3 1s linear 1;
+}
+.l1{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid    #bf360c;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #742006;
+    font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l2{
+     width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid    #bf360c;
+    border-radius: 20px;
+    text-decoration: none;
+     color: #742006;
+     font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l3{
+     width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid    #bf360c;
+    border-radius: 20px;
+    text-decoration: none;
+     color: #742006;
+     font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l4{
+     width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid    #bf360c;
+    border-radius: 20px;
+    text-decoration: none;
+     color: #742006;
+     font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l5{
+     width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid    #bf360c;
+    border-radius: 20px;
+    text-decoration: none;
+     color: #742006;
+     font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l6{
+     width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid    #bf360c;
+    border-radius: 20px;
+    text-decoration: none;
+     color: #742006;
+     font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l1:hover, .l2:hover, .l3:hover, .l4:hover, .l5:hover, .l6:hover{
+    box-shadow: 0px 0px 10px 5px #cf917f;
+  
+}
+@media (min-width:320px) and (max-width:500px){
+   img{
+      width: 300px;
+      height: 300px;
+   }
+   .formclass{
+      padding: 7px;
+   }
+   .guide{
+      padding: 0px;
+   }
+    .formclass{
+    padding: 5px 3px;
+   }
+   .l1, .l2, .l3, .l4, .l5, .l6{
+      width: 300px;
+      padding: 7px;
+   }
+}
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="des">
+                <div class="description">
+                    <div style="font-size: 40px; color:    #bf360c;"><b>Holistic Poultry Care</b></div>
+                    <div style="font-size: 18px; color: #742006;">From daily management to advanced health monitoring,<br> empower your flock's well-being and productivity with our<br> expert guidance and smart tools.</div>
+                    <button onclick="flocksection()" class="hov"><b>Get Started</b></button>
+                </div>
+                <img src="./vecteezy_two-white-chickens-standing-on-a-wooden-rail-in-a-green-field_49085917.jpeg" width="600px" height="400px" style="border-radius: 10px; border: 1px groove burlywood; animation: anime 0.8s linear 1;">
+            </div>
+        </section>
+        <section id="sec">
+            <div class="flock">
+                <div style="font-size: 40px; color:    #bf360c; text-align: center;"><b>Flock Overview</b></div>
+                <div style="font-size: 18px; color: #742006; text-align: center;">Your flock's health, productivity, and daily tasks at a glance.</div>
+                <hr/>
+                <div class="summarycards">
+                    <div class="cards">
+                        <div class="sc1">
+                            <div style="font-size: 50px;">🐥</div>
+                            <div style="font-size: 20px; color: #742006;">Total Flock</div>
+                            <div style="font-size: 24px; color:    #bf360c;"><b>150 Birds</b></div>
+                        </div>
+                        <div class="sc2">
+                            <div style="font-size: 50px;">🥚</div>
+                            <div style="font-size: 20px; color: #742006;">Today's Egg Count</div>
+                            <div style="font-size: 24px; color:    #bf360c;"><b>120 Eggs</b></div>
+                        </div>
+                        <div class="sc3">
+                            <div style="font-size: 50px;">👩‍⚕️</div>
+                            <div style="font-size: 20px; color: #742006;">Flock Health Status</div>
+                            <div style="font-size: 24px; color:    #bf360c;"><b>Healthy</b></div>
+                            <div style="font-size: 20px; color: #742006;"><b>Monitoring 10 Birds</b></div>
+                        </div>
+                        <div class="sc4">
+                            <div style="font-size: 50px;">📝</div>
+                            <div style="font-size: 20px; color: #742006;">Pending Daily Tasks</div>
+                            <div style="font-size: 24px; color:    #bf360c;"><b>3/5 Completed</b></div>
+                            <div style="font-size: 20px; color: #742006;"><b>2 Pending</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="daily">
+                <div style="font-size: 40px; color:    #bf360c; text-align: center;"><b>Daily Management</b></div>
+                <div class="both">
+                    <form class="formclass">
+                        <label style="font-size: 24px; color:    #bf360c;"><b>📝 Daily Checklist</b></label>
+                        <div><input type="checkbox" style="width: 20px; height: 20px;">
+                        <label>Feed Supplied</label></div>
+                        <div><input type="checkbox" style="width: 20px; height: 20px;">
+                        <label>Water Cleaned & Refilled</label></div>
+                        <div><input type="checkbox" style="width: 20px; height: 20px;">
+                        <label>Coop Inspected for Cleanliness</label></div>
+                        <div><input type="checkbox" style="width: 20px; height: 20px;">
+                        <label>Eggs Collected (Enter Count)</label></div>
+                        <div><input type="text" placeholder="Count" style="width: 100px; height: 50px;padding: 5px; border-radius: 5px; border: 2px solid    #bf360c;"></div>
+                        <div><input type="checkbox" style="width: 20px; height: 20px;">
+                        <label>Bird Health Checked</label></div>
+                        <div><input type="checkbox" style="width: 20px; height: 20px;">
+                        <label>Litter Condition Assessed</label></div>
+                        <textarea placeholder="Daily observations or notes (e.g., unusual behavior, water changes)..." style="width: 300px; height: 100px; border-radius: 5px; padding: 5px; border: 2px solid    #bf360c;"></textarea>
+                        <center><input onclick="msgs()" type="submit" value="Save Checklist" style="padding: 10px; font-size: 18px; border-radius: 5px; background-color:    #bf360c; color: white;"></center>
+                    </form>
+                    <form class="environ">
+                        <label style="font-size: 24px; color:    #bf360c;"><b>☀️ Environmental Monitoring</b></label>
+                        <div><label>Temperature: </label><span style="font-size: 18px; color:    #bf360c;"> <b>30<sup>&SmallCircle;</sup>C 🌡️</b></span></div>
+                        <div><input type="range" style="width: 100%;"></div>
+                        <div><label>Humidity: </label><span style="font-size: 18px; color:    #bf360c;"> <b>65 <sup>&SmallCircle;</sup>C ☁️</b></span></div>
+                        <div><input type="range" style="width: 100%;"></div>
+                        <div><label>Ventilation Status:</label></div><select style="width: 100%; height: 50px; border-radius: 10px; border: 2px solid    #bf360c; padding-left: 10px;">
+                        <option>Good</option>
+                        <option>Moderate</option>
+                        <option>Needs Adjustment</option>
+                        </select>
+                        <div><label>Litter Condition:</label></div><select style="width: 100%; height: 50px; border-radius: 10px; border: 2px solid    #bf360c; padding-left: 10px;">
+                        <option>Dry & Clean</option>
+                        <option>Damp</option>
+                        <option>Needs Changing</option>
+                        </select>
+                        <center><input onclick="msg()" type="submit" value="Update Settings" style="padding: 10px; font-size: 18px; border-radius: 5px; background-color:    #bf360c; color: white;"></center>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="health">
+                <div style="font-size: 40px; color:    #bf360c; text-align: center;"><b>Health Monitoring</b></div>
+                <div style="font-size: 18px; color: #742006; text-align: center;">Quickly assess flock health and log any concerns.</div>
+                <div class="healthcards">
+                    <form class="health1">
+                        <label style="font-size: 24px; color:    #bf360c;"><b>👩‍⚕️ Flock Health Summary</b></label>
+                        <div><label style="color:    #bf360c;"><b>Overall Status: </b></label><span>Good</span></div>
+                        <div><label style="color:    #bf360c;"><b>Birds Under Observation: </b></label><span>5 Birds</span></div>
+                        <div><label style="color:    #bf360c;"><b>Recent Health Log Entries: </b></label><span>3 in last 24 hrs</span></div>
+                        <center><input type="submit" value="View Full Health Log" style="padding: 10px; font-size: 18px; border-radius: 5px; background-color:    #bf360c; color: white;"></center>
+                    </form>
+                    <form class="health2">
+                        <label style="font-size: 24px; color:    #bf360c;"><b>🏥 Log Health Observation</b></label>
+                        <div><label>Subject:</label></div><select style="width: 100%; height: 50px; border-radius: 10px; border: 2px solid    #bf360c; padding-left: 10px;">
+                        <option>Entire Flock</option>
+                        <option>Specific Bird(s)</option>
+                        </select> <div><label>Bird ID(s):</label></div><input type="text" placeholder="e.g., Tank #5, Tilapia Pond" style="width: 100%; height: 50px; border-radius: 10px; border: 2px solid    #bf360c; padding-left: 10px;">
+                        <div><label>Type of Observation: </label></div><select style="width: 100%; height: 50px; border-radius: 10px; border: 2px solid    #bf360c; padding-left: 10px;">
+                        <option>General Check</option>
+                        <option>Symptom Observed</option>
+                        <option>Treatment Administered</option>
+                        <option>Mortality</option>
+                        </select>
+                        <div><label>Notes: </label></div><textarea placeholder="Describe observation, symptoms or treatment details..." style="width: 100%; height: 100px; border-radius: 10px; border: 2px solid    #bf360c; padding-left: 10px;"></textarea>
+                        <center><input onclick="sub()" type="submit" value="Submit Observation" style="padding: 10px; font-size: 18px; border-radius: 5px; background-color:    #bf360c; color: white;"></center>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="nutrition">
+                <div style="font-size: 40px; color:    #bf360c; text-align: center;"><b>Nutrition & Feed Guidelines</b></div>
+                <div style="font-size: 18px; color: #742006; text-align: center;">Understand the basic nutritional needs of your flock for optimal health and productivity.</div>
+                <div class="guide">
+                    <div class="essential">
+                    <div style="font-size: 30px; color:    #bf360c;"><b>🥕 Essential Feeding Principles</b></div>
+                    <ul type="none">
+                          <li>✔️ Always provide fresh, clean water: Water is crucial for digestion and overall health</li>
+                            <li>✔️ Offer age-appropriate feed: Chicks, growers, and layers/broilers have different protein and calcium needs</li>
+                            <li>✔️ Ensure a balanced diet: Commercial feeds are typically balanced; supplements should be given carefully</li>
+                            <li>✔️ Maintain consistent feeding times: Helps reduce stress and ensures steady intake</li>
+                            <li>✔️ Keep feeders clean: Prevents contamination and spread of disease</li>
+                    </ul>
+                    </div>
+                    <div style="font-size: 30px; color:    #bf360c;"><b>🥣 Common Feed Types</b></div>
+                    <div class="flexs">
+                        <div class="f1">
+                                <div style="font-size: 24px; color: #bf360c;"><b>Starter Feed</b></div>
+                                <div>High protein (20-24%) for chicks (0-8 weeks) to support rapid growth.</div>
+                            </div>
+                             <div class="f2">
+                                <div style="font-size: 24px; color: #bf360c;"><b>Grower Feed</b></div>
+                                <div>Moderate protein (16-18%) for young pullets/broilers (8-18 weeks) before laying/finishing.</div>
+                             </div>
+                              <div class="f3">
+                                <div style="font-size: 24px; color: #bf360c;"><b>Layer Feed</b></div>
+                                <div>Balanced protein (16-18%) with added calcium for laying hens (18+ weeks) for strong eggshells.</div>
+                              </div>
+                               <div class="f4">
+                                <div style="font-size: 24px; color: #bf360c;"><b>Broiler Finisher</b></div>
+                                <div>Specific blend for meat birds in their final weeks to promote muscle gain and fat deposition.</div>
+                               </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="resource">
+                <div style="font-size: 40px; color:    #bf360c; text-align: center;"><b>Learning Resources</b></div>
+                <div style="font-size: 18px; color: #742006; text-align: center;">Expand your knowledge with guides, videos, external links, and community discussions on sustainable Poultry.</div>
+                <div class="learning">
+                        <a class="l1" href="https://youtu.be/giH5yzE2DJk?si=estZecxE3cAc53x-">
+                            <div style="font-size: 40px;">📑</div>
+                            <div style="font-size: 20px; color: #bf360c;"><b>Guide: Common Poultry Diseases</b></div>
+                            <div>Learn to identify, prevent, and treat common health issues in poultry.</div>
+                        </a>
+                        <a class="l2" href="https://youtu.be/kmUulGkAvN4?si=URdVzL4TTlrOxxLx">
+                            <div style="font-size: 40px;">▶️</div>
+                            <div style="font-size: 20px; color: #bf360c;"><b>Video: Building a Chicken Coop</b></div>
+                            <div>Step-by-step video tutorial for constructing a sturdy and safe chicken coop.</div>
+                        </a>
+                        <a class="l3" href="https://www.cdc.gov/bird-flu/situation-summary/index.html">
+                            <div style="font-size: 40px;">🔗</div>
+                            <div style="font-size: 20px; color: #bf360c;"><b>External Link: Avian Flu Updates</b></div>
+                            <div>Stay informed with the latest updates from official health organizations.</div>
+                        </a>
+                        <a class="l4" href="https://www.facebook.com/groups/155020415447152/">
+                            <div style="font-size: 40px;">🧑‍🤝‍🧑</div>
+                            <div style="font-size: 20px; color: #bf360c;"><b>Community Discussion Board</b></div>
+                            <div>Connect with other poultry farmers, share tips, and ask questions.</div>
+                        </a>
+                        <a class="l5" href="https://www.pangoo.biz/organic-chicken-feed-ingredients/">
+                            <div style="font-size: 40px;">📰</div>
+                            <div style="font-size: 20px; color: #bf360c;"><b>Article: Organic Feed Options</b></div>
+                            <div>Explore natural and organic feeding alternatives for your flock.</div>
+                        </a>
+                        <a class="l6" href="https://layinghens.hendrix-genetics.com/en/articles/biosecurity-at-the-poultry-farm-a-basic-tool-to-ensure-poultry-health-and-welfare/">
+                            <div style="font-size: 40px;">📃</div>
+                            <div style="font-size: 20px; color: #bf360c;"><b>Checklist: Biosecurity Best Practices</b></div>
+                            <div>Implement essential measures to protect your flock from diseases.</div>
+                        </a>
+                    </div>
+            </div>
+        </section>
+    </main>
+   <script>
+            function msg()
+            {
+                alert("Temperature: 30 Degrees Humidity: 65 Degrees")
+                alert("Changes Updated Successfully")
+            }
+            function msgs()
+            {
+                alert("Checklist Saved Successfully")
+            }
+             function sub()
+            {
+                alert("Submitted Successfully")
+            }
+            function flocksection()
+            {
+                const flock=document.getElementById("sec");
+                flock.scrollIntoView({behaviour : "smooth"});
+            }
+        </script>
+</body>
+</html>

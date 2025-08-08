@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sericulture - AgriAssist</title>
+    <link rel="stylesheet" href="aqua-page.css">
+    <link rel="stylesheet" href="./header_and_footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+      <header>
+            <div class="header">
+               <a href="Home.html"><img src="./Logo_Agri_Assist.png"  width="160px"></a>
+                   <nav class="navigation">
+                            <a href="Home.html" class="tags"><b>Home</b></a>
+                            <div class="drop" ><a class="tags" href="Home.html"><b>Categories</b></a>
+                                <div class="dropdown">
+                                <a href="Agriculture.html">Agriculture</a>
+                               <a href="Aquaculture.html">Aquaculture</a>
+                               <a href="Sericulture.html">Sericulture</a>
+                               <a href="Apiculture.html">Apiculture</a>
+                               <a href="Dairy_Poultry.html">Poultry</a>
+                               <a href="Organic.html">Dairy</a>
+                                </div>
+                            </div>
+                            <a href="Home.html" class="tags"><b>Weather</b></a>
+                            <a href="Home.html" class="tags"><b>Market</b></a>
+                            <a href="iship.html" class="tags"><b>About</b></a>
+                            <a href="Home.html" class="tags"><b>Contact Us</b></a>
+                            <a href="Home.html" class="profile"><b>Profile</b></a>
+                        </nav>
+                        <div onclick="Open()" style="padding-top: 45px;" class="bars"><i class="fa-solid fa-bars"></i></div>
+                        <div class="menu_options">
+                        <span onclick="Close()">&times;</span>
+                        <div><a href="Home.html"><b>Home</b></a></div>
+                                     <div class="drop1"><a href="Home.html"><b>Categories</b></a>
+                                         <div class="dropdown1">
+                                         <a href="Agriculture.html">Agriculture</a>
+                                        <a href="Aquaculture.html">Aquaculture</a>
+                                        <a href="Sericulture.html">Sericulture</a>
+                                        <a href="Apiculture.html">Apiculture</a>
+                                        <a href="Dairy_Poultry.html">Poultry</a>
+                                        <a href="Organic.html">Dairy</a>
+                                         </div>
+                                    </div>
+                                <div><a href="Home.html"><b>Weather</b></a></div>
+                                <div><a href="Home.html"><b>Market</b></a></div>
+                                <div><a href="Home.html"><b>About</b></a></div>
+                                <div><a href="Home.html"><b>Contact Us</b></a></div>
+                                <div><a href="Home.html"><b>Login</b></a></div>
+                           </div>
+                         <script>
+                            function Close(){
+                                document.getElementsByClassName("menu_options")[0].style.left="-320px";
+                            }
+                             function Open(){
+                                document.getElementsByClassName("menu_options")[0].style="left:0px";
+                            }
+                             </script>
+                            </div>
+         </header>
+
+
+      <section class="section-hero">
+        <div class="section-hero-video-background">
+            <video class="hero-video-banner" src="banner.mp4" autoplay loop muted playsinline></video>
+            <div class="hero-content-overlay-right">
+                <h3 class="hero-title">What is Sericulture and How SmartCultivo Helps?</h3>
+                <p class="hero-description-overlay">
+                    Sericulture, the art of cultivating silkworms for silk production, is a vital agricultural activity. SmartCultivo brings cutting-edge AI and data analysis to this sector, helping you make informed decisions for healthier silkworms and increased silk yield.
+                </p>
+                <p class="hero-description-overlay">
+                    Our platform is built with **full user-friendliness** in mind, ensuring that every farmer, from beginner to expert, can harness the power of data and AI to optimize their operations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white" id="main-caro" >
+        <div class="container mx-auto px-4" id="carousel-container">
+            <div  class="carousel-container" id="features-carousel-container">
+                <div class="carousel-slides" id="features-carousel-slides">
+                    <div  class="carousel-slide" id="slide1">
+                        <span class="feature-icon mb-2">🐛</span>
+                        <h1 class="text-xl font-semibold text-gray-900 mb-3">Silkworm Rearing Insights</h1>
+                        <p class=" text-left">
+                            Unlock the secrets to successful silkworm rearing with SmartCultivo. Our AI-powered platform provides real-time, data-driven advice to optimize your silk yields and ensure thriving sericulture operations. Leveraging geo-data, climate, and mulberry leaf quality analysis, SmartCultivo helps you make informed decisions, reducing crop failure and increasing productivity in your silk farms. From smart rearing calendars to real-time advisory, we empower you with the insights needed for healthier silkworms and increased income.
+                        </p>
+                    </div>
+
+                    <div class="carousel-slide" id="slide2" >
+                        <span class="feature-icon mb-4">🌿</span>
+                        <h1 class="text-xl font-semibold text-gray-900 mb-3">Mulberry & Leaf Management</h1>
+                        <p class=" text-left">
+                            Maintain optimal mulberry leaf conditions with SmartCultivo's continuous monitoring. Our AI analyzes leaf moisture, nutrient levels, and disease presence to ensure high-quality feed. Get proactive alerts and recommendations to safeguard your stock and maximize success.
+                        </p>        </div>
+
+                    <div class="carousel-slide" id="slide3" >
+                        <span class="feature-icon mb-4">🦠</span>
+                        <h1 class="text-xl font-semibold text-gray-900 mb-3">Disease Prevention & Hygiene</h1>
+                        <p  class=" text-left">
+                            SmartCultivo delivers proactive alerts and critical insights to help you prevent common silkworm diseases. Our AI system detects early signs of distress, safeguarding your yields with timely interventions and preventative measures for vital and productive silkworms.
+                        </p>        </div>
+
+                    <div class="carousel-slide" id="slide4">
+                        <span class="feature-icon mb-4">🍽️</span>
+                        <h1 class="text-xl font-semibold text-gray-900 mb-3">Feeding & Nutrition Management</h1>
+                        <p class=" text-left">
+                            Optimize feeding schedules and mulberry leaf quantities for maximum silkworm growth and minimal waste. SmartCultivo's AI provides data-driven recommendations, considering instar, growth stage, and environmental conditions for precise feed dosage. This improves efficiency, reduces waste, and lowers costs.
+                        </p>         </div>
+
+                    <div class="carousel-slide" id="slide5">
+                        <span class="feature-icon mb-4">⚕️</span>
+                        <h1 class="text-xl font-semibold text-gray-900 mb-3">Species-Specific Rearing Guidance</h1>
+                        <p class=" text-left">
+                        Whether it's Bombyx mori or other sericigenous insects, get tailored advice specific to your silkworm species. Our platform understands diverse needs, providing targeted support and optimized recommendations for breeding, feeding, and environmental management for healthy growth and optimal yield.
+                        </p>    </div>
+
+                    <div class="carousel-slide" id="slide6">
+                        <span class="feature-icon mb-4">📈</span>
+                        <h1 class="text-xl font-semibold text-gray-900 mb-3">Cocoon Quality & Harvest Monitoring</h1>
+                        <p class=" text-left">
+                                Stay ahead of market trends with SmartCultivo's forecasting. Our insights help you cultivate what's in high demand, leading to better profits. We analyze real-time market data, including local and regional demands, to provide precise recommendations on silk varieties, aligning your efforts with profitable opportunities.
+                        </p>         </div>
+
+                    <div class="carousel-slide" id="slide7">
+                        <span class="feature-icon mb-4">💹</span>
+                        <h1 class="text-xl font-semibold text-gray-900 mb-3">Sustainable Sericulture Practices</h1>
+                        <p class=" text-left">
+                        Embrace eco-friendly practices and minimize your environmental footprint. SmartCultivo provides insights on efficient resource use and minimizing environmental impact, contributing to a healthier, more sustainable sericulture ecosystem and future for the silk industry.
+                        </p>         </div>
+
+                    <div class="carousel-slide" id="slide8">
+                        <span class="feature-icon mb-4">🔄</span>
+                        <h1 class="text-xl font-semibold text-gray-900 mb-3">Real-Time Sericulture Advisory</h1>
+                        <p class=" text-left">
+                                Get instant, AI-powered recommendations for your sericulture operations, anytime, anywhere. Make smarter decisions based on live data, leveraging geo-data, mulberry variety, and weather for precise, real-time rearing advisory. Adapt quickly to changing conditions, ensuring optimal care and maximizing silk yields.
+                        </p>        </div>
+                </div>
+                <button class="carousel-button prev" onclick="prevSlide('features-carousel')">&#10094;</button>
+                <button class="carousel-button next" onclick="nextSlide('features-carousel')">&#10095;</button>
+            </div>
+            <div class="carousel-indicators" id="features-carousel-indicators"></div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white" id="cards-section">
+        <div class="container mx-auto px-4" id="cards-main-container" >
+            <h3 class="text-3xl font-bold text-gray-900 text-center mb-12">SmartCultivo: Your Complete Sericulture Partner 🐛</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10" id="cards-container" >
+
+                <div class="card  p-8 rounded-xl  flex flex-col items-center text-center">
+                    <span class="feature-icon mb-4">🌡️</span>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Real-Time Rearing House Climate Monitoring</h4>
+                    <p class="text-gray-600 text-left">
+                        Utilize IoT sensors for temperature, humidity, and air quality. Get instant alerts for imbalances like "High Humidity" or "Temperature Fluctuations" with actionable advice to keep silkworms healthy.
+                    </p>        
+                    <a href="">
+                        <button class="button-ph">Know More</button>
+                    </a>
+                </div>
+
+                <div class="card  p-8 rounded-xl  flex flex-col items-center text-center">
+                    <span class="feature-icon mb-4">🌱</span>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Mulberry Cultivation & Leaf Quality Advisory</h4>
+                    <p class="text-gray-600 text-left">
+                        Comprehensive guidance for cultivating high-quality mulberry leaves. Includes expert recommendations on soil, irrigation, nutrient management, and advice on leaf harvesting and storage.
+                    </p>
+                    <a href="">
+                        <button class="button-ph">Know More</button>
+                    </a>
+                </div>
+                <div class="card  p-8 rounded-xl  flex flex-col items-center text-center">
+                    <span class="feature-icon mb-4">🍎</span>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Optimal Feeding Schedules </h4>
+                    <p class="text-gray-600 text-left">
+                        Receive AI-based feeding schedules customized to silkworm instar, variety, and environmental conditions. Get precise mulberry leaf dosage and type recommendations, with immediate alerts for issues like overfeeding.
+                    </p>
+                    <a href="">
+                        <button class="button-ph">Know More</button>
+                    </a>
+                </div>
+
+                <div class="card  p-8 rounded-xl  flex flex-col items-center text-center">
+                    <span class="feature-icon mb-4">⚕️</span>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Silkworm Disease & Health Monitoring</h4>
+                    <p class="text-gray-600 text-left">
+                        Use our AI + image recognition tool to detect disease, pests, or deficiencies. Get treatment solutions (organic/chemical) and connect with local sericulture experts or government departments.
+                    </p>    
+                    <a href="">
+                        <button class="button-ph">Know More</button>
+                    </a>
+                </div>
+
+                <div class="card  p-8 rounded-xl flex flex-col items-center text-center">
+                    <span class="feature-icon mb-4">💹</span>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Market & Logistics Dashboard for Silk</h4>
+                    <p class="text-gray-600 text-left">
+                        Track real-time market prices for cocoons and raw silk. Get "Sell Now" alerts based on price trends and locate nearby reeling units, silk mills, and bulk buyers.
+                    </p>
+                    <a href="">
+                        <button class="button-ph">Know More</button>
+                    </a>
+                </div>
+
+                <div class="card p-8 rounded-xl  flex flex-col items-center text-center">
+                    <span class="feature-icon mb-4">🌦️</span>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Weather Impact Analysis for Sericulture</h4>
+                    <p class="text-gray-600 text-left">
+                    Track real-time local weather and receive "Adverse Weather Alerts" for conditions impacting mulberry growth and silkworm health. Get proactive advice on how weather changes affect rearing and feeding schedules.
+                    </p>
+                    <a href="">
+                        <button class="button-ph">Know More</button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="gradient-bg text-white py-16 text-center" >
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl md:text-4xl font-bold mb-6">🐛 Ready to Elevate Your Sericulture Game?</h3>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                Experience the intelligence and simplicity of SmartCultivo — your partner for sustainable, high-yield silk farming.        
+            </p>
+            <button class="bg-white text-blue-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                📞 Contact Us Today
+            </button>
+        </div>
+    </section>
+
+      <footer>
+            <div class="footer">
+                <div class="foot">
+                    <div class="links">
+                        <div class="com">
+                            <div style=" color: white; font-size: 18px; font-family: Arial, Helvetica, sans-serif; "><b>Quick Links</b></div>
+                            <a href="Home.html" style="text-decoration: none; color: white; font-size: 16px; font-family: Arial, Helvetica, sans-serif; ">Home</a>
+                            <a href="Home.html" style="text-decoration: none; color: white; font-size: 16px; font-family: Arial, Helvetica, sans-serif; ">Weather</a>
+                            <a href="Home.html" style="text-decoration: none; color: white; font-size: 16px; font-family: Arial, Helvetica, sans-serif; ">Market</a>
+                            <a href="Home.html" style="text-decoration: none; color: white; font-size: 16px; font-family: Arial, Helvetica, sans-serif; ">About</a>
+                        </div>
+                        <div class="com">
+                            <div style=" color: white; font-size: 18px; font-family: Arial, Helvetica, sans-serif; "><b>Resources</b></div>
+                            <a href="Home.html" style="text-decoration: none; color: white; font-size: 16px; font-family: Arial, Helvetica, sans-serif; ">FAQ's</a>
+                            <a href="Home.html" style="text-decoration: none; color: white; font-size: 16px; font-family: Arial, Helvetica, sans-serif; ">Blogs</a>
+                            <a href="Home.html" style="text-decoration: none; color: white; font-size: 16px; font-family: Arial, Helvetica, sans-serif; ">Guidelines</a>
+                            <a href="Home.html" style="text-decoration: none; color: white; font-size: 16px; font-family: Arial, Helvetica, sans-serif; ">Terms & Conditions</a>
+                        </div>
+                        <div class="com11">
+                            <div style="color: white; font-size: 18px; font-family: Arial, Helvetica, sans-serif"><b>Contact</b></div>
+                             <div style="color: white; font-size: 16px; font-family: Arial, Helvetica, sans-serif; cursor: pointer;">📞 Call: +91 8096542356</div>
+                             <div style="color: white; font-size: 16px; font-family: Arial, Helvetica, sans-serif; cursor: pointer;">📧 Email: support@agriassist.com</div>
+                        </div>
+                        <div class="com">
+                            <div style="color: white; font-size: 18px; font-family: Arial, Helvetica, sans-serif"><b>Follow Us</b></div>
+                            <div class="com1">
+                            <a href="Home.html" style="text-decoration: none; color: white; font-size: 20px; font-family: Arial, Helvetica, sans-serif; "><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="Home.html" style="text-decoration: none; color: white; font-size: 20px; font-family: Arial, Helvetica, sans-serif; "><i class="fa-brands fa-facebook"></i></a>
+                            <a href="Home.html" style="text-decoration: none; color: white; font-size: 20px; font-family: Arial, Helvetica, sans-serif; "><i class="fa-brands fa-youtube"></i></a>
+                            <a href="Home.html" style="text-decoration: none; color: white; font-size: 20px; font-family: Arial, Helvetica, sans-serif; "><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo"><img src="./logo.png" width="250px" height="200px"></div>
+                </div>
+                       <hr/>
+                <div class="copy">&copy; 2025 AgriAssist. All rights reserved.</div>
+            </div>
+        </footer>
+
+
+<script>
+        // Carousel logic
+        const carousels = {}; // Store carousel states by ID
+
+        function initializeCarousel(carouselId) {
+            const slidesContainer = document.getElementById(`${carouselId}-slides`);
+            // Check if slidesContainer exists before proceeding
+            if (!slidesContainer) {
+                console.warn(`Carousel container with ID '${carouselId}-slides' not found.`);
+                return;
+            }
+
+            const slides = slidesContainer.children;
+            const indicatorsContainer = document.getElementById(`${carouselId}-indicators`);
+            let currentIndex = 0;
+
+            carousels[carouselId] = {
+                slidesContainer,
+                slides,
+                indicatorsContainer,
+                currentIndex
+            };
+
+            // Create indicators
+            if (indicatorsContainer) { // Check if indicatorsContainer exists
+                for (let i = 0; i < slides.length; i++) {
+                    const indicator = document.createElement('div');
+                    indicator.classList.add('indicator');
+                    indicator.addEventListener('click', () => goToSlide(carouselId, i));
+                    indicatorsContainer.appendChild(indicator);
+                }
+            }
+            updateCarousel(carouselId); // Initial update
+        }
+
+        function updateCarousel(carouselId) {
+            const carousel = carousels[carouselId];
+            if (!carousel || !carousel.slidesContainer) return; // Defensive check
+
+            carousel.slidesContainer.style.transform = `translateX(-${carousel.currentIndex * 100}%)`;
+
+            // Update indicators
+            if (carousel.indicatorsContainer) { // Check if indicatorsContainer exists
+                Array.from(carousel.indicatorsContainer.children).forEach((indicator, index) => {
+                    if (index === carousel.currentIndex) {
+                        indicator.classList.add('active');
+                    } else {
+                        indicator.classList.remove('active');
+                    }
+                });
+            }
+        }
+
+        function nextSlide(carouselId) {
+            const carousel = carousels[carouselId];
+            if (!carousel) return; // Defensive check
+            carousel.currentIndex = (carousel.currentIndex + 1) % carousel.slides.length;
+            updateCarousel(carouselId);
+        }
+
+        function prevSlide(carouselId) {
+            const carousel = carousels[carouselId];
+            if (!carousel) return; // Defensive check
+            carousel.currentIndex = (carousel.currentIndex - 1 + carousel.slides.length) % carousel.slides.length;
+            updateCarousel(carouselId);
+        }
+
+        function goToSlide(carouselId, index) {
+            const carousel = carousels[carouselId];
+            if (!carousel) return; // Defensive check
+            carousel.currentIndex = index;
+            updateCarousel(carouselId);
+        }
+
+        // Initialize carousels on window load
+        window.onload = function() {
+            initializeCarousel('hero-carousel');
+            initializeCarousel('features-carousel');
+            initializeCarousel('app-carousel');
+
+            // Optional: Auto-advance carousels
+            setInterval(() => nextSlide('hero-carousel'), 5000); // Change slide every 5 seconds
+            setInterval(() => nextSlide('features-carousel'), 6000); // Features carousel auto-advance
+            setInterval(() => nextSlide('app-carousel'), 4000); // Change slide every 4 seconds
+        };
+</script>
+
+</body>
+</html>

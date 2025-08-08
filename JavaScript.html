@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <title>JavaScript</title>
+            <!-- //  var x=window.prompt("Enter Number");
+            //  x=parseInt(x);
+            // console.log(typeof(x),x);
+            // let x;
+            // x=10;
+            // const x=10;
+            // {var x;
+            // x=10;
+            // }
+            // {
+            // console.log(x);
+            // }
+            // var x=10;
+            // x>=18? console.log("Eligible") : console.log("Not Eligible");
+            // console.log(Math.round(Math.random()*100));
+            // console.log(Math.min(3,7,2));
+            // console.log(Math.min(1,2,3));
+            //  console.log(Math.max(1,2,3));
+            //   console.log(Math.round(3.5));
+            //     console.log(Math.ceil(3.5));
+            //       console.log(Math.floor(3.5));
+            //         console.log(Math.pow(3,2));
+            //         console.log(Math.floor(Math.random()*100));
+            //         console.log(Math.abs(-5));
+            //          console.log(Math.sqrt(5));
+        //     var x=window.prompt("Enter a Number to Check");
+        //     x=parseInt(x);
+        //     if(x>=18)
+        //    {
+        //     console.log("Eligible");
+        //    }
+        //    else{
+        //     console.log("Not Eligible");
+        //    }
+        // console.log(x);
+        // var x="Sai";
+        // var x=[10,23,40,59,11,2,14];
+        // console.log(x.length);
+        // console.log(x.sort());
+        // x.splice(3,1,7);
+        // x.push(12);
+        // x.unshift(6);
+        // // x.pop();
+        // // x.shift();
+        //  var x=[10,23,40,59,11,2,14];
+        // //  x.slice(2,7);
+        // console.log(x.slice(2,7));
+        // x.map(ele =>{
+        //     console.log(ele);
+        // })
+        //  x.map((ele,index)=>{
+        //     console.log(ele,index);
+        // })
+        // var y=x.filter(ele => ele%2==0);
+        //     console.log(y);
+        // console.log( x.includes(10));
+        // var s="  Technical Hube   "
+        // console.log(s.length);
+        // console.log(s.toLowerCase())
+        // console.log(s.toUpperCase())
+        // console.log(s.indexOf('H'))
+        // console.log(s.lastIndexOf('e'))
+        // console.log(s.replace('e','aa'))
+        // console.log(s.replaceAll('e','a'))
+        // console.log(s.split(","));
+        // console.log(s.split(" "));
+        // console.log(s.trim().length)
+        // var d={}
+        // d[100]=2
+        // d[200]=1
+        // d["Sai"]=3
+        // // d.thub=5
+        // // console.log(d)
+        // // delete d[100]
+        // // console.log(d.Sai)
+        // // console.log(d[100])
+        // console.log(Object.keys(d))
+        // console.log(Object.values(d))
+        // console.log(Object.entries(d))
+        // Object.entries(d).map(ele =>{
+        //     console.log(ele)
+        // })
+        //  Object.entries(d).map(ele =>{
+        //     console.log("Key:",ele[0],"Value",ele[1])
+        // })
+        // var d=new Date()
+        // console.log(d.getDate());
+        // console.log(d.getDay());
+        // console.log(d.getFullYear());
+        // console.log(d.getHours());
+        // console.log(d.getMinutes());
+        // console.log(d.getMonth());
+        // console.log(d.getTime());
+        // console.log(d.getMilliseconds());
+        // if(true)
+        //     console.log("Hello"); -->
+        <!-- // } -->
+        <!-- // let c=5+a;
+        // console.log(c);
+        // var a=5;
+        // console.log(a.toUpperCase())
+        // var a=[5]
+        // console.log(a)
+        // var myarr=new Array(-4)
+        // myarr.push(2)
+        // myarr[2]=1;
+        // console.log(myarr)
+        // var s=7.987;
+        // console.log(s.toFixed(101))
+        // console.log("Hello")
+        // let c=5+a;
+        // console.log(c);
+        // console.log("Thub")
+        // function fun()
+        // {
+        //     // console.log("Hello World!")
+            // window.alert("Hello");
+        // } -->
+        </head>
+    <body>
+        <!-- <p>Sai Durga</p>
+        <p style="color: blue;">Anisetti</p> -->
+        <!-- <div class="demo">Demooo</div>
+        <span class="demo">Hiii</span>
+        <div id="unique">Hellooo</div> -->
+        <!-- <button onclick="console.log('Haiii')">Hit-Me</button> -->
+     <!-- <button onclick="fun()">Hit-Me</button>
+     <button ondblclick="fun()">Hit-Me</button>
+     <button onmouseover="fun()">Hit-Me</button>
+     <button onmouseenter="fun()">Hit-Me</button>
+     <button onmouseleave="fun()">Hit-Me</button>
+     <button onmouseout="fun()">Hit-Me</button>
+     <button onmouseup="fun()">Hit-Me</button>
+     <button onmousedown="fun()">Hit-Me</button> -->
+     <div style="width:100px; height:100px; background-color: blue; position: relative; left:100px;">Haiii</div>
+     <button onclick="fun1()">Clickdown</button>
+     <button onclick="fun2()">Clickup</button>
+     <button onclick="fun3()">Clickleft</button>
+     <button onclick="fun4()">Clickright</button>
+    </body>
+    <script>
+        // console.log(document.getElementsByTagName("p"));
+        //  console.log(document.getElementsByClassName("demo"));
+        //   console.log(document.getElementById("unique"));
+        //   console.log(document.getElementsByTagName("p")[0].innerText);
+        //   console.log(document.getElementsByClassName("demo")[0].innerText);
+        //   console.log(document.getElementById("unique").innerText);
+        //   console.log(document.getElementsByTagName("p")[1].style="color:red;");
+        function fun1()
+        {
+           console.log(document.getElementsByTagName("div")[0].style="position:relative; top:200px; width:100px; height:100px; background-color: blue;");
+        }
+         function fun2()
+        {
+           console.log(document.getElementsByTagName("div")[0].style="position:relative; bottom:10px; width:100px; height:100px; background-color: blue;");
+        }
+         function fun3()
+        {
+           console.log(document.getElementsByTagName("div")[0].style="position:relative; right:30px; width:100px; height:100px; background-color: blue;");
+        }
+         function fun4()
+        {
+           console.log(document.getElementsByTagName("div")[0].style="position:relative; left:300px; width:100px; height:100px; background-color: blue;");
+        }
+    </script>
+</html>

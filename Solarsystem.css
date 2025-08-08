@@ -1,0 +1,175 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./sky.jpg");
+    background-size: 100% 100%;
+}
+.c10{
+    width: 1900px;
+    height: 1900px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: relative;
+    animation:animation 8s linear 1s infinite;
+}
+.i10{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-image: url("./neptune.webp");
+    background-size: contain;
+    position: absolute;
+    top: -55px;
+    left: 800px;
+}
+.c9{
+    width: 1700px;
+    height: 1700px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 250px;
+    animation:animation 9s linear 1s infinite;
+}
+.i9{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-image: url("./uranus.webp");
+    background-size: contain;
+    position: absolute;
+    top: 100px;
+    left: 250px;
+}
+.c8{
+    width: 1500px;
+    height: 1500px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 350px;
+   animation:animation 10s linear 1s infinite;
+}
+.i8{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-image: url("./saturn..webp");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 300px;
+    left: 25px;
+}
+.c7{
+    width: 1300px;
+    height: 1300px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 450px;
+    animation:animation 8s linear 1s infinite;
+}
+.i7{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-image: url("./jupiter.webp");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 600px;
+    left: -60px;
+}
+.c6{
+    width: 1100px;
+    height: 1100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 550px;
+    animation:animation 9s linear 1s infinite;
+}
+.i6{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-image: url("./mars.webp");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 700px;
+    left: -10px;
+}
+.c5{
+    width: 900px;
+    height: 900px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 650px;
+    animation:animation 10s linear 1s infinite;
+}
+.i5{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-image: url("./earth.webp");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 780px;
+    left: 170px;
+}
+.c4{
+    width: 700px;
+    height: 700px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 750px;
+    animation:animation 11s linear 1s infinite;
+}
+.i4{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-image: url("./venus.webp");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 620px;
+    left: 400px;
+}
+.c3{
+    width: 500px;
+    height: 500px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 850px;
+    animation:animation 12s linear 1s infinite;
+}
+.i3{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-image: url("./Mercury.webp");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 230px;
+    left: 430px;
+}
+.c2{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: 970px;
+     background-color: rgba(255, 179, 0, 0.932);
+    box-shadow: 0px 0px 13px 20px rgb(255, 89, 0);
+}
+@keyframes animation{
+    0%{
+        transform: rotatez(0deg) translatex(0px);
+    }
+    100%{
+        transform: rotatez(360deg)  translatex(0px);
+    }
+}

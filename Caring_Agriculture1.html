@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Agriculture Caring</title>
+    <!-- <link rel="stylesheet" href="Caring_Agriculture1.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html {
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+.des{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: rgba(135, 231, 175, 0.395); */
+    padding: 50px 0px;
+    gap: 30px 0px;
+    /* box-shadow: 0px 0px 10px 5px rgba(173, 216, 230, 0.267); */
+    background-color: white;
+    /* margin-bottom: 50px; */
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    padding-left: 20px;
+    gap: 30px 0px;
+    animation: anime 0.8s linear 1;
+}
+.hov{
+   color: white;
+    background-color: #4CAF50; 
+    border-radius: 5px; 
+    padding: 15px 10px; 
+    text-align: center; 
+    font-size: 20px; 
+    width: 200px;
+}
+ .hov:hover{
+   background-color:  #e3f9e5;
+   color:  #014703;
+   cursor: pointer;
+ }
+ @keyframes anime {
+   from{
+      transform: translateY(40px);
+      opacity: 0;
+   }
+   to{
+      transform: translateY(0px);
+      opacity: 1;
+   }
+ }
+.flock{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    /* background-color: rgba(255, 166, 0, 0.103); */
+    padding: 50px 0px;
+     background-color:  #e3f9e5;
+}
+ .summarycards{
+    display: flex;flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+ }
+ .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+ }
+ .sc1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-left: 13px solid #4CAF50;
+    border-radius: 20px;
+    transition: transform 0.5s linear;
+ }
+  .sc2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-left: 13px solid #4CAF50;
+     border-radius: 20px;
+     transition: transform 0.5s linear;
+ }
+  .sc3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-left: 13px solid #4CAF50;
+     border-radius: 20px;
+     transition: transform 0.5s linear;
+ }
+  .sc4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-left: 13px solid #4CAF50;
+     border-radius: 20px;
+     transition: transform 0.5s linear;
+ }
+ .sc1:hover, .sc2:hover, .sc3:hover, .sc4:hover{
+   transform: translateY(-20px);
+    box-shadow: 0px 0px 10px 5px #65c27ca0;
+  
+ }
+ .daily{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0px;
+     /* box-shadow: 0px 0px 10px 5px rgba(173, 216, 230, 0.267); */
+      background-color:  #e3f9e5;
+      margin-top: 80px;
+ }
+ .both{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px 100px;
+ }
+ .formclass{
+     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 13px 20px;
+     border: 3px solid #4CAF50;
+     color: #014703;;
+     font-size: 18px;
+     border-radius: 20px;
+     gap: 18px;
+     animation: anime1 0.8s linear 1;
+     background-color: white;
+ }
+ .formclass:hover, .environ:hover, .health1:hover, .health2:hover{
+     box-shadow: 0px 0px 10px 5px #65c27ca0;
+ }
+ .environ{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+     border: 3px solid #4CAF50;;
+     color: #014703;
+     font-size: 18px;
+     border-radius: 20px;
+     gap: 25px;
+     background-color: white;
+      animation: anime2 0.8s linear 1;
+ }
+ @keyframes anime1 {
+   from{
+      transform: translateX(-50px);
+      opacity: 0;
+   }
+   to{
+      transform: translateX(0px);
+      opacity: 1;
+   }
+ }
+  @keyframes anime2 {
+   from{
+      transform: translateX(50px);
+      opacity: 0;
+   }
+   to{
+      transform: translateX(0px);
+      opacity: 1;
+   }
+ }
+ .health{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* background-color: rgba(255, 166, 0, 0.082); */
+    padding: 50px 0px;
+     background-color:  #e3f9e5;
+     margin-top: 50px;
+ }
+ .healthcards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 100px;
+ }
+ .health1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+     padding: 20px;
+     border: 3px solid #4CAF50;
+      font-size: 18px;
+     border-radius: 20px;
+     gap: 25px;
+     color: #014703;
+     animation: anime1 0.8s linear 1;
+     background-color: white;
+
+ }
+ .health2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+     padding: 20px;
+     border: 3px solid #4CAF50;;
+      font-size: 18px;
+     border-radius: 20px;
+     gap: 15px;
+     color: #014703;
+     animation: anime2 0.8s linear 1;
+      background-color: white;
+ }
+ .nutrition{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* background-color: rgba(47, 255, 0, 0.235); */
+    padding: 50px 0px;
+     /* box-shadow: 0px 0px 10px 5px rgba(173, 216, 230, 0.267); */
+      background-color: white;
+ }
+ .guide{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+    padding:10px;
+      box-shadow: 0px 0px 10px 5px #65c27ca0;
+    border-radius: 30px;
+    animation: anime3 1s linear 1;
+ }
+ .essential{
+   display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+    padding:20px;
+    border: 2px solid #4CAF50;;
+    border-radius: 30px;
+    background-color: white;
+    animation: anime3 1s linear 1;
+ }
+ @keyframes  anime3 {
+   from{
+      opacity: 0;
+   }
+   to{
+      opacity: 1;
+   }
+   
+ }
+ ul li{
+    font: 16px;
+    color: #014703;
+    padding-bottom: 10px;
+ }
+ .flexs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    padding-bottom: 20px;
+ }
+ .f1{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-left: 10px solid #4CAF50;
+    text-align: center;
+    color: #014703;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform 0.5s linear;
+    /* padding: 10px; */
+ }
+ .f2{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-left: 10px solid #4CAF50;
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #014703;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform 0.5s linear;
+    /* padding: 10px; */
+ }
+ .f3{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-left: 10px solid #4CAF50;
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #014703;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform 0.5s linear;
+    /* padding: 10px; */
+ }
+  .f4{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-left: 10px solid #4CAF50;
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #014703;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform 0.5s linear;
+    /* padding: 10px; */
+ }
+ .f1:hover, .f2:hover, .f3:hover, .f4:hover{
+   transform: translateY(-20px);
+     box-shadow: 0px 0px 10px 5px #65c27ca0;
+ }
+.resource{
+     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    /* background-color: rgba(0, 255, 51, 0.08); */
+    padding: 50px 0px;
+     background-color:  #e3f9e5;
+}
+.learning{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px 10px;
+    animation: anime3 1s linear 1;
+}
+.l1{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #4CAF50;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #014703;
+    font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l2{
+     width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #4CAF50;
+    border-radius: 20px;
+    text-decoration: none;
+     color: #014703;
+     font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l3{
+     width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #4CAF50;
+    border-radius: 20px;
+    text-decoration: none;
+     color: #014703;
+     font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l4{
+     width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #4CAF50;
+    border-radius: 20px;
+    text-decoration: none;
+     color: #014703;
+     font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l5{
+     width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #4CAF50;
+    border-radius: 20px;
+    text-decoration: none;
+     color: #014703;
+     font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l6{
+     width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #4CAF50;
+    border-radius: 20px;
+    text-decoration: none;
+     color: #014703;
+     font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l1:hover, .l2:hover, .l3:hover, .l4:hover, .l5:hover, .l6:hover{
+    box-shadow: 0px 0px 10px 5px #65c27ca0;
+}
+@media (min-width:320px) and (max-width:500px){
+   img{
+      width: 300px;
+      height: 300px;
+   }
+   .formclass{
+      padding: 7px;
+   }
+   .guide{
+      padding: 0px;
+   }
+   .formclass{
+    padding: 5px 3px;
+   }
+   .l1, .l2, .l3, .l4, .l5, .l6{
+      width: 300px;
+      padding: 7px;
+   }
+}
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="des">
+                <div class="description">
+                    <div style="font-size: 40px; color:   #4CAF50;"><b>Holistic Agriculture Management</b></div>
+                    <div style="font-size: 18px; color: #014703;">From daily field tasks to advanced crop health monitoring,<br> optimize your farm's productivity and sustainability with our<br> expert guidance and smart tools.</div>
+                    <button onclick="flocksection()" class="hov"><b>Get Started</b></button>
+                </div>
+                <img src="./vecteezy_landscape-of-corn-field-with-the-sunset-farm-of-green-crop_3324019.jpg" width="600px" height="400px" style="border-radius: 10px; border: 1px groove burlywood; animation: anime 0.8s linear 1;">
+            </div>
+        </section>
+        <section id="sec">
+            <div class="flock">
+                <div style="font-size: 40px; color:   #4CAF50; text-align: center;"><b>Farm Overview</b></div>
+                <div style="font-size: 18px; color: #014703; text-align: center;">Your farm's health, yield potential, and daily tasks at a glance.</div>
+                <hr/>
+                <div class="summarycards">
+                    <div class="cards">
+                        <div class="sc1">
+                            <div style="font-size: 50px;">🌱</div>
+                            <div style="font-size: 20px; color: #014703;">Total Cultivated Area</div>
+                            <div style="font-size: 24px; color:   #4CAF50;"><b>150 Acres</b></div>
+                        </div>
+                        <div class="sc2">
+                            <div style="font-size: 50px;">🌽</div>
+                            <div style="font-size: 20px; color: #014703;">Expected Harvest</div>
+                            <div style="font-size: 24px; color:   #4CAF50;"><b>Harvest Ongoing</b></div>
+                        </div>
+                        <div class="sc3">
+                            <div style="font-size: 50px;">🌍</div>
+                            <div style="font-size: 20px; color: #014703;">Crop & Soil Health</div>
+                            <div style="font-size: 24px; color:   #4CAF50;"><b>Excellent</b></div>
+                            <div style="font-size: 20px; color: #014703;"><b>Monitoring 3 Fields</b></div>
+                        </div>
+                        <div class="sc4">
+                            <div style="font-size: 50px;">📝</div>
+                            <div style="font-size: 20px; color: #014703;">Pending Farm Tasks</div>
+                            <div style="font-size: 24px; color:   #4CAF50;"><b>2/7 Completed</b></div>
+                            <div style="font-size: 20px; color: #014703;"><b>5 Pending</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="daily">
+                <div style="font-size: 40px; color:   #4CAF50; text-align: center;"><b>Daily Farm Management</b></div>
+                <div class="both">
+                    <form class="formclass">
+                        <label style="font-size: 24px; color:   #4CAF50;"><b>📝 Daily Farm Checklist</b></label>
+                        <div><input type="checkbox" style="width: 20px; height: 20px;">
+                        <label>Field Inspected</label></div>
+                        <div><input type="checkbox" style="width: 20px; height: 20px;">
+                        <label>Irrigation System Checked</label></div>
+                        <div><input type="checkbox" style="width: 20px; height: 20px;">
+                        <label>Equipment Maintenance Checked</label></div>
+                        <div><input type="checkbox" style="width: 20px; height: 20px;">
+                        <label>Nutrient Application (Enter Amount)</label></div>
+                        <div><input type="number" placeholder="Count" style="width: 100px; height: 50px;padding: 5px; border-radius: 5px; border: 2px solid   #4CAF50;"></div>
+                        <div><input type="checkbox" style="width: 20px; height: 20px;">
+                        <label>Pest/Disease Scouting Completed</label></div>
+                        <div><input type="checkbox" style="width: 20px; height: 20px;">
+                        <label>Weed Control Status Assessed</label></div>
+                        <textarea placeholder="Daily field observations or notes..." style="width: 300px; height: 100px; border-radius: 5px; padding: 5px; border: 2px solid   #4CAF50;"></textarea>
+                        <center><input onclick="msgs()" type="submit" value="Save Checklist" style="padding: 10px; font-size: 18px; border-radius: 5px; background-color:   #4CAF50; color: white;"></center>
+                    </form>
+                    <form class="environ">
+                        <label style="font-size: 24px; color:   #4CAF50;"><b>☀️ Environmental Monitoring</b></label>
+                        <div><label>Temperature: </label><span style="font-size: 18px; color:   #4CAF50;"> <b>30<sup>&SmallCircle;</sup>C 🌡️</b></span></div>
+                        <div><input type="range" style="width: 100%;"></div>
+                        <div><label>Humidity: </label><span style="font-size: 18px; color:   #4CAF50;"> <b>65% ☁️</b></span></div>
+                        <div><input type="range" style="width: 100%;"></div>
+                        <div><label>Soil Moisture:</label></div><select style="width: 100%; height: 50px; border-radius: 10px; border: 2px solid   #4CAF50; padding-left: 10px;">
+                        <option>Optimal</option>
+                        <option>Dry - Needs Irrigation</option>
+                        <option>Wet - Poor Drainage</option>
+                        </select>
+                        <div><label>Weather Forecast:</label></div><select style="width: 100%; height: 50px; border-radius: 10px; border: 2px solid   #4CAF50; padding-left: 10px;">
+                        <option>Clear</option>
+                        <option>Rain Expected</option>
+                        <option>Storm Alert</option>
+                        </select>
+                        <center><input onclick="msg()" type="submit" value="Update Settings" style="padding: 10px; font-size: 18px; border-radius: 5px; background-color:   #4CAF50; color: white;"></center>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="health">
+                <div style="font-size: 40px; color:   #4CAF50; text-align: center;"><b>Crop & Soil Health Monitoring</b></div>
+                <div style="font-size: 18px; color: #014703; text-align: center;">Quickly assess crop and soil health and log any concerns.</div>
+                <div class="healthcards">
+                    <form class="health1">
+                        <label style="font-size: 24px; color:   #4CAF50;"><b>👩‍⚕️ Farm Health Summary</b></label>
+                        <div><label style="color:   #4CAF50;"><b>Overall Status: </b></label><span>Good</span></div>
+                        <div><label style="color:   #4CAF50;"><b>Areas Under Observation: </b></label><span>3 Fields</span></div>
+                        <div><label style="color:   #4CAF50;"><b>Recent Health Log Entries: </b></label><span>2 in last 24 hrs</span></div>
+                        <center><input type="submit" value="View Full Health Log" style="padding: 10px; font-size: 18px; border-radius: 5px; background-color:   #4CAF50; color: white;"></center>
+                    </form>
+                    <form class="health2">
+                        <label style="font-size: 24px; color:   #4CAF50;"><b>🌿 Crop/Soil Observation Log</b></label>
+                        <div><label>Subject:</label></div><select style="width: 100%; height: 50px; border-radius: 10px; border: 2px solid   #4CAF50; padding-left: 10px;">
+                        <option>Entire Farm</option>
+                        <option>Specific Field(S)</option>
+                        <option>Specific Crop Type</option>
+                        </select> <div><label>Field ID(s):</label></div><input type="text" placeholder="e.g., Field 3, Wheat Plot" style="width: 100%; height: 50px; border-radius: 10px; border: 2px solid   #4CAF50; padding-left: 10px;">
+                        <div><label>Type of Observation: </label></div><select style="width: 100%; height: 50px; border-radius: 10px; border: 2px solid   #4CAF50; padding-left: 10px;">
+                        <option>General Check</option>
+                        <option>Pest Infestation</option>
+                        <option>Disease Symptom</option>
+                        <option>Nutrient Deficiency</option>
+                        <option>Growth Anomaly</option>
+                        <option>Soil Issue</option>
+                        </select>
+                        <div><label>Notes: </label></div><textarea placeholder="Describe observation, symptoms or treatment details..." style="width: 100%; height: 100px; border-radius: 10px; border: 2px solid   #4CAF50; padding-left: 10px;"></textarea>
+                        <center><input onclick="sub()" type="submit" value="Submit Observation" style="padding: 10px; font-size: 18px; border-radius: 5px; background-color:   #4CAF50; color: white;"></center>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="nutrition">
+                <div style="font-size: 40px; color:   #4CAF50; text-align: center;"><b>Crop Nutrition & Soil Guidelines</b></div>
+                <div style="font-size: 18px; color: #014703; text-align: center;">Understand the basic nutritional needs of your crops and soil for optimal growth and yield.</div>
+                <div class="guide">
+                    <div class="essential">
+                    <div style="font-size: 30px; color:   #4CAF50;"><b>💧 Essential Crop Nutrition Principles</b></div>
+                    <ul type="none">
+                        <li>✔️ Regular Soil Testing: Understand your soil's composition and nutrient levels.</li>
+                        <li>✔️ Balanced Fertilization: Apply nutrients (N-P-K) based on crop needs and soil test results.</li>
+                        <li>✔️ Efficient Water Management: Crucial for nutrient uptake and plant health; avoid over/under-watering.</li>
+                        <li>✔️ Promote Soil Organic Matter: Improves soil structure, water retention, and nutrient availability.</li>
+                        <li>✔️ Crop Rotation & Cover Cropping: Enhance soil health, suppress pests, and cycle nutrients naturally.</li>
+                    </ul>
+                    </div>
+                    <div style="font-size: 30px; color:   #4CAF50;"><b>🪴 Common Soil Amendments & Nutrients</b></div>
+                    <div class="flexs">
+                        <div class="f1">
+                            <div style="font-size: 24px; color:   #4CAF50;"><b>Organic Compost</b></div>
+                            <div>Improves soil structure, adds diverse nutrients, and enhances microbial activity.</div>
+                        </div>
+                        <div class="f2">
+                            <div style="font-size: 24px; color:   #4CAF50;"><b>NPK Fertilizers</b></div>
+                            <div>Provides essential Nitrogen, Phosphorus, and Potassium for robust plant growth.</div>
+                        </div>
+                        <div class="f3">
+                            <div style="font-size: 24px; color:   #4CAF50;"><b>Micronutrients</b></div>
+                            <div>Trace elements like Iron, Zinc, Boron, critical for specific plant functions.</div>
+                        </div>
+                        <div class="f4">
+                            <div style="font-size: 24px; color:   #4CAF50;"><b>Cover Crops</b></div>
+                            <div>Plants grown to protect and enrich the soil, not for harvest (e.g., legumes, grasses).</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="resource">
+                <div style="font-size: 40px; color:   #4CAF50; text-align: center;"><b>Learning Resources</b></div>
+                <div style="font-size: 18px; color: #014703; text-align: center;">Expand your knowledge with guides, videos, external links, and community discussions on sustainable agriculture.</div>
+                <div class="learning">
+                    <a class="l1" href="https://eos.com/blog/crop-diseases/">
+                        <div style="font-size: 40px;">📑</div>
+                        <div style="font-size: 20px; color:   #4CAF50;"><b>Guide: Common Crop Diseases</b></div>
+                        <div>Learn to identify, prevent, and treat common health issues in various crops.</div>
+                    </a>
+                    <a class="l2" href="https://www.youtube.com/results?search_query=farm+irrigation+system+setup">
+                        <div style="font-size: 40px;">▶️</div>
+                        <div style="font-size: 20px; color:   #4CAF50;"><b>Video: Irrigation System Setup Guide</b></div>
+                        <div>Step-by-step video tutorial for designing and implementing effective farm irrigation.</div>
+                    </a>
+                    <a class="l3" href="https://www.usda.gov/">
+                        <div style="font-size: 40px;">🔗</div>
+                        <div style="font-size: 20px; color:   #4CAF50;"><b>External Link: USDA Farm Resources</b></div>
+                        <div>Access government and research resources for modern farm management practices.</div>
+                    </a>
+                    <a class="l4" href="https://discuss.farmnest.com/">
+                        <div style="font-size: 40px;">🧑‍🤝‍🧑</div>
+                        <div style="font-size: 20px; color:   #4CAF50;"><b>Community: Farmers' Discussion Forum</b></div>
+                        <div>Connect with other farmers, share best practices, and get advice on sustainable agriculture</div>
+                    </a>
+                    <a class="l5" href="https://www.worldwildlife.org/industries/sustainable-agriculture">
+                        <div style="font-size: 40px;">📰</div>
+                        <div style="font-size: 20px; color:   #4CAF50;"><b>Article: Sustainable Farming Practices</b></div>
+                        <div>Discover natural methods for improving soil fertility and overall farm ecosystem health.</div>
+                    </a>
+                    <a class="l6" href="https://www.manifest.ly/use-cases/property-management/pest-control-checklist">
+                        <div style="font-size: 40px;">📃</div>
+                        <div style="font-size: 20px; color:   #4CAF50;"><b>Checklist: Pest Management Best Practices</b></div>
+                        <div>Implement comprehensive strategies to manage pests responsibly in your fields.</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function msg()
+        {
+            alert("Temperature: 30 Degrees CelsiusHumidity: 65%");
+             alert("Environmental settings updated successfully!");
+        }
+        function msgs()
+        {
+            alert("Daily Checklist saved successfully!");
+        }
+        function sub()
+        {
+            alert("Observation submitted successfully!");
+        }
+        function flocksection()
+        {
+            const flock=document.getElementById("sec");
+            flock.scrollIntoView({behavior : "smooth"});
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dairy Caring</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    html {
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+.des{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: rgba(135, 231, 175, 0.395); */
+    padding: 50px 0px;
+    gap: 30px 0px;
+    /* box-shadow: 0px 0px 10px 5px rgba(173, 216, 230, 0.267); */
+    background-color: white;
+    /* margin-bottom: 50px; */
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    padding-left: 20px;
+    gap: 30px 0px;
+    animation: anime 0.8s linear 1;
+}
+.hov{
+   color: white;
+    background-color:    #8d6e63;
+    border-radius: 5px; 
+    padding: 15px 10px; 
+    text-align: center; 
+    font-size: 20px; 
+    width: 200px;
+}
+ .hov:hover{
+   background-color: #fdf7e3;
+   color:    #8d6e63;
+   cursor: pointer;
+ }
+ @keyframes anime {
+   from{
+      transform: translateY(40px);
+      opacity: 0;
+   }
+   to{
+      transform: translateY(0px);
+      opacity: 1;
+   }
+ }
+.flock{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    /* background-color: rgba(255, 166, 0, 0.103); */
+    padding: 50px 0px;
+     background-color: #fdf7e3;
+}
+ .summarycards{
+    display: flex;flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+ }
+ .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+ }
+ .sc1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-left: 13px solid    #8d6e63;
+    border-radius: 20px;
+    transition: transform 0.5s linear;
+ }
+  .sc2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-left: 13px solid    #8d6e63;
+     border-radius: 20px;
+     transition: transform 0.5s linear;
+ }
+  .sc3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-left: 13px solid    #8d6e63;
+     border-radius: 20px;
+     transition: transform 0.5s linear;
+ }
+  .sc4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-left: 13px solid    #8d6e63;
+     border-radius: 20px;
+     transition: transform 0.5s linear;
+ }
+ .sc1:hover, .sc2:hover, .sc3:hover, .sc4:hover{
+   transform: translateY(-20px);
+    box-shadow: 0px 0px 10px 5px #c8a091;
+  
+ }
+ .daily{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0px;
+     /* box-shadow: 0px 0px 10px 5px rgba(173, 216, 230, 0.267); */
+      background-color: #fdf7e3;
+      margin-top: 80px;
+ }
+ .both{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px 100px;
+ }
+ .formclass{
+     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 13px 20px;
+     border: 3px solid    #8d6e63;
+     color:  #611d04; 
+     font-size: 18px;
+     border-radius: 20px;
+     gap: 18px;
+     animation: anime1 0.8s linear 1;
+     background-color: white;
+ }
+ .formclass:hover, .environ:hover, .health1:hover, .health2:hover{
+     box-shadow: 0px 0px 10px 5px #c8a091;
+  
+ }
+ .environ{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+     border: 3px solid    #8d6e63;;
+     color: #611d04; 
+     font-size: 18px;
+     border-radius: 20px;
+     gap: 25px;
+     background-color: white;
+      animation: anime2 0.8s linear 1;
+ }
+ @keyframes anime1 {
+   from{
+      transform: translateX(-50px);
+      opacity: 0;
+   }
+   to{
+      transform: translateX(0px);
+      opacity: 1;
+   }
+ }
+  @keyframes anime2 {
+   from{
+      transform: translateX(50px);
+      opacity: 0;
+   }
+   to{
+      transform: translateX(0px);
+      opacity: 1;
+   }
+ }
+ .health{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* background-color: rgba(255, 166, 0, 0.082); */
+    padding: 50px 0px;
+     background-color: #fdf7e3;
+     margin-top: 50px;
+ }
+ .healthcards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 100px;
+ }
+ .health1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+     padding: 20px;
+     border: 3px solid    #8d6e63;
+      font-size: 18px;
+     border-radius: 20px;
+     gap: 25px;
+     color: #611d04; 
+     animation: anime1 0.8s linear 1;
+     background-color: white;
+
+ }
+ .health2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+     padding: 20px;
+     border: 3px solid    #8d6e63;;
+      font-size: 18px;
+     border-radius: 20px;
+     gap: 15px;
+     color: #611d04; 
+     animation: anime2 0.8s linear 1;
+      background-color: white;
+ }
+ .nutrition{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* background-color: rgba(47, 255, 0, 0.235); */
+    padding: 50px 0px;
+     /* box-shadow: 0px 0px 10px 5px rgba(173, 216, 230, 0.267); */
+      background-color: white;
+ }
+ .guide{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+    padding:10px;
+      box-shadow: 0px 0px 10px 5px #c8a091;
+  
+    border-radius: 30px;
+    animation: anime3 1s linear 1;
+ }
+ .essential{
+   display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+    padding:20px;
+    border: 2px solid    #8d6e63;;
+    border-radius: 30px;
+    background-color: white;
+    animation: anime3 1s linear 1;
+ }
+ @keyframes  anime3 {
+   from{
+      opacity: 0;
+   }
+   to{
+      opacity: 1;
+   }
+   
+ }
+ ul li{
+    font: 16px;
+    color: #611d04; 
+    padding-bottom: 10px;
+ }
+ .flexs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    padding-bottom: 20px;
+ }
+ .f1{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-left: 10px solid    #8d6e63;
+    text-align: center;
+    color: #611d04; 
+    gap: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform 0.5s linear;
+    /* padding: 10px; */
+ }
+ .f2{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-left: 10px solid    #8d6e63;
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #611d04; 
+    gap: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform 0.5s linear;
+    /* padding: 10px; */
+ }
+ .f3{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-left: 10px solid    #8d6e63;
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #611d04; 
+    gap: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform 0.5s linear;
+    /* padding: 10px; */
+ }
+  .f4{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-left: 10px solid    #8d6e63;
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #611d04; 
+    gap: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform 0.5s linear;
+    /* padding: 10px; */
+ }
+ .f1:hover, .f2:hover, .f3:hover, .f4:hover{
+   transform: translateY(-20px);
+     box-shadow: 0px 0px 10px 5px #c8a091;
+  
+ }
+.resource{
+     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    /* background-color: rgba(0, 255, 51, 0.08); */
+    padding: 50px 0px;
+     background-color: #fdf7e3;
+}
+.learning{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px 10px;
+    animation: anime3 1s linear 1;
+}
+.l1{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid    #8d6e63;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #611d04; 
+    font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l2{
+     width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid    #8d6e63;
+    border-radius: 20px;
+    text-decoration: none;
+     color: #611d04; 
+     font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l3{
+     width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid    #8d6e63;
+    border-radius: 20px;
+    text-decoration: none;
+     color: #611d04; 
+     font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l4{
+     width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid    #8d6e63;
+    border-radius: 20px;
+    text-decoration: none;
+     color: #611d04; 
+     font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l5{
+     width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid    #8d6e63;
+    border-radius: 20px;
+    text-decoration: none;
+     color: #611d04; 
+     font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l6{
+     width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid    #8d6e63;
+    border-radius: 20px;
+    text-decoration: none;
+     color: #611d04; 
+     font-size: 16px;
+    gap: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.l1:hover, .l2:hover, .l3:hover, .l4:hover, .l5:hover, .l6:hover{
+    box-shadow: 0px 0px 10px 5px #c8a091;
+  
+}
+@media (min-width:320px) and (max-width:500px){
+   img{
+      width: 300px;
+      height: 300px;
+   }
+   .formclass{
+      padding: 7px;
+   }
+   .guide{
+      padding: 0px;
+   }
+    .formclass{
+    padding: 5px 3px;
+   }
+   .l1, .l2, .l3, .l4, .l5, .l6{
+      width: 300px;
+      padding: 7px;
+   }
+}
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="des">
+                <div class="description">
+                    <div style="font-size: 40px; color:    #8d6e63;"><b>Holistic Dairy Farm Management</b></div>
+                    <div style="font-size: 18px; color: #611d04; ">From daily milking routines to advanced animal health monitoring,<br>empower your dairy farm's productivity and herd health with our<br>expert guidance and smart tools.</div>
+                    <button onclick="flocksection()" class="hov"><b>Get Started</b></button>
+                </div>
+                <img src="./vecteezy_milk-is-poured-into-a-glass-cup-from-a-bottle-on-the-wooden_23999871.jpg" width="600px" height="400px" style="border-radius: 10px; border: 1px groove burlywood; animation: anime 0.8s linear 1;">
+            </div>
+        </section>
+        <section id="sec">
+            <div class="flock">
+                <div style="font-size: 40px; color:    #8d6e63
+;text-align: center;"><b>Dairy Farm Overview</b></div>
+                <div style="font-size: 18px; color: #611d04;  text-align: center;">Your herd's health, milk production, and daily tasks at a glance.</div>
+                <hr/>
+                <div class="summarycards">
+                    <div class="cards">
+                        <div class="sc1">
+                                <div style="font-size: 50px;">🐄</div>
+                                <div style="font-size: 20px; color: #611d04;">Total Livestock</div>
+                                <div style="font-size: px; color: #8d6e63;"><b>120 Cows</b></div>
+                            </div>
+                            <div class="sc2">
+                                <div style="font-size: 50px;">🥛</div>
+                                <div style="font-size: 20px; color: #611d04;">Daily Milk Production</div>
+                                <div style="font-size: 24px; color: #8d6e63;"><b>1800 Liters</b></div>
+                            </div>
+                            <div class="sc3">
+                                <div style="font-size: 50px;">🩺</div>
+                                <div style="font-size: 20px; color: #611d04;">Herd Health Status</div>
+                                <div style="font-size: 24px; color: #8d6e63;"><b>Excellent</b></div>
+                                <div style="font-size: 20px; color: #611d04;"><b>Monitoring 10 Cows</b></div>
+                            </div>
+                            <div class="sc4">
+                                <div style="font-size: 50px;">📝</div>
+                                <div style="font-size: 20px; color: #611d04;">Pending Daily Tasks</div>
+                                <div style="font-size: 24px; color: #8d6e63;"><b>3/6 Completed</b></div>
+                                <div style="font-size: 20px; color: #611d04;"><b>3 Pending</b></div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="daily">
+                <div style="font-size: 40px; color:    #8d6e63
+;text-align: center;"><b>Daily Dairy Management</b></div>
+                <div class="both">
+                    <form class="formclass">
+                        <label style="font-size: 24px; color:    #8d6e63;"><b>📝 Daily Checklist</b></label>
+                        <div><input type="checkbox" style="width: 20px; height: 20px;">
+                            <label>Morning Milking Completed</label></div>
+                            <div><input type="checkbox" style="width: 20px; height: 20px;">
+                            <label>Feed & Water Provided</label></div>
+                            <div><input type="checkbox" style="width: 20px; height: 20px;">
+                            <label>Barn/Pens Cleaned</label></div>
+                            <div><input type="checkbox" style="width: 20px; height: 20px;">
+                            <label>Health Checks Done (Enter Count)</label></div>
+                            <div><input type="number" placeholder="Count" style="width: 100px; height: 50px;padding: 5px; border-radius: 5px; border: 2px solid #8d6e63;;"></div>
+                            <div><input type="checkbox" style="width: 20px; height: 20px;">
+                            <label>Calving Monitored</label></div>
+                            <div><input type="checkbox" style="width: 20px; height: 20px;">
+                            <label>New Births Noted (Enter Count)</label></div>
+                            <textarea placeholder="Daily observations or notes (e.g., feed intake, behavior changes])..." style="width: 300px; height: 100px; border-radius: 5px; padding: 5px; border: 2px solid #8d6e63;;"></textarea>
+                            <center><input onclick="msgs()" type="submit" value="Save Checklist" style="padding: 10px; font-size: 18px; border-radius: 5px; background-color: #8d6e63; color: white;"></center>
+                    </form>
+                    <form class="environ">
+                        <label style="font-size: 24px; color:    #8d6e63;"><b>🏠 Environmental Parameters</b></label>
+                        <div><label>Temperature: </label><span style="font-size: 18px; color: #8d6e63;">Barn Temp: <b>20<sup>&SmallCircle;</sup>C 🌡️</b></span></div>
+                            <div><input type="range" style="width: 100%;"></div>
+                            <div><label>Humidity: </label><span style="font-size: 18px; color: #8d6e63;">Humidity: <b>70% ☁️</b></span></div>
+                            <div><input type="range" style="width: 100%;"></div>
+                            <div><label>Ventilation Status:</label></div><select style="width: 100%; height: 50px; border-radius: 10px; border: 2px solid #8d6e63; padding-left: 10px;">
+                                <option>Good Ventilation</option>
+                                <option>Moderate</option>
+                                <option>Needs Improvement</option>
+                            </select>      
+                            <div><label>Bedding Condition:</label></div><select style="width: 100%; height: 50px; border-radius: 10px; border: 2px solid #8d6e63; padding-left: 10px;">
+                                <option>Dry & Clean</option>
+                                <option>Damp</option>
+                                <option>Needs Replacement</option>
+                            </select>
+                            <center><input onclick="msg()" type="submit" value="Update Settings" style="padding: 10px; font-size: 18px; border-radius: 5px; background-color: #8d6e63; color: white;"></center>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="health">
+                <div style="font-size: 40px; color:    #8d6e63
+;text-align: center;"><b>Dairy Cattle Health Monitoring</b></div>
+                <div style="font-size: 18px; color: #611d04;  text-align: center;">Quickly assess dairy cattle health and log any concerns.</div>
+                <div class="healthcards">
+                    <form class="health1">
+                            <label style="font-size: 24px; color: #8d6e63;"><b>👩‍⚕️ Herd Health Summary</b></label>
+                            <div><label style="color: #8d6e63;"><b>Overall Status: </b></label><span>Thriving</span></div>
+                            <div><label style="color: #8d6e63;"><b>Animals Under Observation: </b></label><span>5 Cows</span></div>
+                            <div><label style="color: #8d6e63;"><b>Recent Health Log Entries: </b></label><span>2 in last 24 hrs</span></div>
+                            <center><input type="submit" value="View Full Health Log" style="padding: 10px; font-size: 18px; border-radius: 5px; background-color: #8d6e63; color: white;"></center>
+                        </form>
+                        <form class="health2">
+                            <label style="font-size: 24px; color: #8d6e63;"><b>🐄 Cattle Observation Log</b></label>
+                            <div><label>Subject:</label></div><select id="observation-subject" style="width: 100%; height: 50px; border-radius: 10px; border: 2px solid #8d6e63; padding-left: 10px;">
+                                <option>Entire Herd</option>
+                                <option>Specific Animal(s)</option>
+                                <option>Calf Group</option>
+                            </select>       <div><label>ID(s) </label></div><input type="text" placeholder="e.g., Cow #123, Calf Pen 5" style="width: 100%; height: 50px; border-radius: 10px; border: 2px solid #8d6e63; padding-left: 10px;">
+                            <div><label>Type of Observation: </label></div><select id="observation-type" style="width: 100%; height: 50px; border-radius: 10px; border: 2px solid #8d6e63; padding-left: 10px;">
+                                <option>Routine Check</option>
+                                <option>Disease Symptom</option>
+                                <option>Behavior Change</option>
+                                <option>Lame</option>
+                                <option>Calving</option>
+                                <option>Mastitis</option>
+                                <option>Mortality</option>
+                            </select>
+                            <div><label>Notes: </label></div><textarea placeholder="Describe observation, symptoms, or treatment details..." style="width: 100%; height: 100px; border-radius: 10px; border: 2px solid #8d6e63; padding-left: 10px;"></textarea>
+                            <center><input onclick="sub()" type="submit" value="Submit Observation" style="padding: 10px; font-size: 18px; border-radius: 5px; background-color: #8d6e63; color: white;"></center>
+                     </form>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="nutrition">
+                <div style="font-size: 40px; color:    #8d6e63
+;text-align: center;"><b>Dairy Cattle Nutrition & Feed Guidelines</b></div>
+                <div style="font-size: 18px; color: #611d04;  text-align: center;">Understand the vital nutritional needs of your dairy cows for optimal milk production and health.</div>
+                <div class="guide">
+                    <div class="essential">
+                    <div style="font-size: 30px; color:    #8d6e63;"><b>🌾 Essential Cattle Feeding Principles</b></div>
+                    <ul type="none">
+                            <li>✔️ <b>Balanced Rations:</b> Provide a diet tailored to lactation stage, age, and production level.</li>
+                            <li>✔️ <b>Quality Forage:</b> Offer high-quality hay, silage, or pasture as the foundation of the diet.</li>
+                            <li>✔️ <b>Adequate Water:</b> Ensure constant access to fresh, clean water, crucial for milk production.</li>
+                            <li>✔️ <b>Consistent Feeding:</b> Maintain regular feeding times to optimize digestion and intake.</li>
+                            <li>✔️ <b>Mineral & Vitamin Supplementation:</b> Supplement essential minerals and vitamins often lacking in base feeds.</li>
+                        </ul>
+                    </div>
+                    <div style="font-size: 30px; color:    #8d6e63;"><b>🌱 Common Dairy Feed Types</b></div>
+                    <div class="flexs">
+                        <div class="f1">
+                                <div style="font-size: 24px; color: #8d6e63;"><b>Forage (Hay/Silage)</b></div>
+                                <div>Bulk fibrous feed like hay, pasture, corn silage, or alfalfa silage, providing energy and fiber.</div>
+                            </div>
+                            <div class="f2">
+                                <div style="font-size: 24px; color: #8d6e63;"><b>Concentrates</b></div>
+                                <div>High-energy and protein feeds like grains (corn, barley), soybean meal, or commercial pellets.</div>
+                            </div>
+                            <div class="f3">
+                                <div style="font-size: 24px; color: #8d6e63;"><b>Mineral & Vitamin Mixes</b></div>
+                                <div>Essential supplements to meet specific nutrient requirements and prevent deficiencies.</div>
+                            </div>
+                            <div class="f4">
+                                <div style="font-size: 24px; color: #8d6e63;"><b>Water</b></div>
+                                <div>Crucial for digestion, metabolism, and the primary component of milk production.</div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="resource">
+                <div style="font-size: 40px; color:    #8d6e63
+;text-align: center;"><b>Learning Resources</b></div>
+                <div style="font-size: 18px; color: #611d04;  text-align: center;">Expand your knowledge with guides, videos, external links, and community discussions on sustainable dairy farming.</div>
+                <div class="learning">
+                     <a class="l1" href="https://www.pir.sa.gov.au/__data/assets/pdf_file/0011/432569/cattle-diseases-farmers-guide.pdf">
+                            <div style="font-size: 40px;">📑</div>
+                            <div style="font-size: 20px; color: #8d6e63;"><b>Guide: Common Dairy Cattle Diseases</b></div>
+                            <div>Learn to identify, prevent, and treat prevalent health issues like mastitis and lameness.</div>
+                        </a>
+                        <a class="l2" href="https://youtu.be/VVxsPfLgryE?si=NAn4w3CYCM0d-YTT">
+                            <div style="font-size: 40px;">▶️</div>
+                            <div style="font-size: 20px; color: #8d6e63;"><b>Video: Best Milking Practices</b></div>
+                            <div>Step-by-step tutorial on hygienic milking, machine operation, and udder care.</div>
+                        </a>
+                        <a class="l3" href="https://ndri.res.in/">
+                            <div style="font-size: 40px;">🔗</div>
+                            <div style="font-size: 20px; color: #8d6e63;"><b>External Link: Dairy Research & Extension</b></div>
+                            <div>Access official resources and research findings from leading dairy industry organizations.</div>
+                        </a>
+                        <a class="l4" href="https://thefarmingforum.co.uk/index.php?forums/dairy-farming/">
+                            <div style="font-size: 40px;">🧑‍🤝‍🧑</div>
+                            <div style="font-size: 20px; color: #8d6e63;"><b>Community Discussion: Dairy Farmer Forum</b></div>
+                            <div>Connect with other dairy farmers, share techniques, and discuss herd management challenges.</div>
+                        </a>
+                        <a class="l5" href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/milk-quality">
+                            <div style="font-size: 40px;">📰</div>
+                            <div style="font-size: 20px; color: #8d6e63;"><b>Article: Optimizing Milk Quality</b></div>
+                            <div>Understand factors influencing milk quality and best practices for collection, cooling, and storage.</div>
+                        </a>
+                        <a class="l6" href="https://www.farmbiosecurity.com.au/wp-content/uploads/2021/07/Biosecurity-checklist-feed-mills.pdf">
+                            <div style="font-size: 40px;">📃</div>
+                            <div style="font-size: 20px; color: #8d6e63;"><b>Checklist: Dairy Farm Biosecurity</b></div>
+                            <div>Implement essential measures to maintain a healthy environment and prevent disease outbreaks.</div>
+                        </a> 
+                </div>
+            </div>
+        </section>
+    </main>
+      <script>
+            function msg()
+            {
+                // Updated alert for dairy values
+                alert("Barn Temperature: 20 Degrees Humidity: 70%") 
+                alert("Changes Updated Successfully")
+            }
+            function msgs()
+            {
+                alert("Checklist Saved Successfully")
+            }
+            function sub()
+            {
+                alert("Submitted Successfully")
+            }
+            function flocksection()
+            {
+                const flock=document.getElementById("sec");
+                flock.scrollIntoView({behavior : "smooth"});
+            }
+        </script>
+</body>
+</html>

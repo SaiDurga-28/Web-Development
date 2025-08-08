@@ -1,0 +1,13 @@
+.box{
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 5px 1px gray;
+    border-radius: 3px;
+}
+.text{
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+    color: blue;
+    text-shadow: 0px 0px 35px;
+}

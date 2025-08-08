@@ -1,0 +1,36 @@
+.para1{
+    text-transform: uppercase;
+}
+.para2{
+    text-transform: lowercase;
+}
+.para3{
+    text-transform: capitalize;
+}
+.para4{
+    letter-spacing: 10px;
+}
+.para5{
+    word-spacing: 10px;
+}
+.para6{
+    line-height: 40px;
+}
+.para7{
+    text-indent: 30px;
+}
+.para8{
+    text-shadow: 3px 3px 3px;
+}
+.para9{
+    text-shadow: 5px;
+}
+.para10{
+    text-shadow: 10px 10px;
+}
+.para11{
+    text-shadow: -10px -10px;
+}
+.para12{
+    text-shadow: 0px 5px violet;
+}
