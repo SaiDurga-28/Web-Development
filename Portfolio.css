@@ -1,0 +1,442 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: space-around;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.name{
+    color: gold;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    text-decoration: none;
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.navigations{
+    padding-top: 30px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.navigations:hover{
+    color: gold;
+}
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 600px; */
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.photo{
+    height: 300px;
+    width:300px;
+    border-radius: 50%;
+    border: 15px solid rgb(63, 61, 61);
+    animation: anime1 0.8s linear 1;
+    box-shadow: 0px 0px 10px 0px gold;
+}
+.me{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 600px;
+    gap: 25px;
+    animation: anime1 0.8s linear 1;
+}
+.explore{
+    color: gold;
+    border: 3px groove white;
+    padding: 10px; width: 100px;
+    text-align: center; 
+    border-radius: 20px; 
+    font-size: 20px;
+    cursor: pointer;
+    animation: anime1 0.8s linear 1;
+     text-decoration: none;
+}
+.explore:hover{
+    /* background-color: gold;
+    color: black; */
+    box-shadow: 0px 0px 10px 0px grey;
+}
+ @keyframes anime1 {
+   from{
+      transform: translateY(30px);
+      opacity: 0;
+   }
+   to{
+      transform: translateY(0px);
+      opacity: 1;
+   }
+ }
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    /* justify-content: space-around;
+    align-items: center; */
+    gap: 30px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    padding-left: 100px;
+}
+ @keyframes anime2 {
+   from{
+      transform: translateX(-30px);
+      opacity: 0;
+   }
+   to{
+      transform: translateX(0px);
+      opacity: 1;
+   }
+ }
+
+.btech{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+    /* border: 1px solid white; */
+    padding: 50px;
+    border-radius: 20px;
+     box-shadow: 0px 0px 10px 0px grey;
+     animation: anime2 0.8s linear 1;
+      transition: transform 0.5s linear;
+}
+.btech:hover{
+    /* box-shadow: 0px 0px 10px 5px grey; */
+    border: 1px solid gold;
+ }
+.project{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    /* justify-content: space-around;
+    align-items: center; */
+    gap: 50px;
+    flex-direction: column;
+    padding: 50px;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: black; */
+    justify-content: space-around;
+    gap: 30px;
+    animation: anime3 0.8s linear 1;
+}
+ @keyframes anime3 {
+   from{
+      transform: translateY(30px);
+      opacity: 0;
+   }
+   to{
+      transform: translateY(0px);
+      opacity: 1;
+   }
+ }
+.p1{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+     /* box-shadow: 0px 0px 10px 0px grey; */
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 50px 20px;
+    gap: 30px;
+    opacity: 1;
+    border: 1px solid grey;
+}
+.p1:hover{
+    box-shadow: 0px 0px 10px 5px grey;
+    border: 1px solid gold;
+    opacity: 0.9;
+ }
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 50px 50px;
+    flex-direction: column;
+    gap: 50px;
+}
+.tskills{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: black; */
+    justify-content: space-around;
+    gap: 30px;
+    animation: anime4 1s linear 1;
+}
+     @keyframes anime4 {
+   from{
+      /* transform: translateY(30px); */
+      opacity: 0;
+   }
+   to{
+      /* transform: translateY(0px); */
+      opacity: 1;
+   }
+ }
+.skillset{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+     transition: transform 0.5s linear;
+    width: 300px;
+     align-items: center;
+     gap: 20px;
+      padding: 50px 15px;
+       border-left: 7px solid gold;
+       border-right: 1px solid grey;
+       border-bottom: 1px solid grey;
+       border-top: 1px solid grey;
+      border-radius: 20px;
+}
+ .skillset:hover{
+   transform: translateY(-20px);
+    box-shadow: 0px 0px 10px 5px grey;
+     /* border-left: 10px solid white;
+     border-radius: 20px; */
+  
+ }
+.certificates,.achievements{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 50px 50px;
+    flex-direction: column;
+    gap: 50px;
+}
+     @keyframes anime2 {
+   from{
+      transform: translateX(-30px);
+      opacity: 0;
+   }
+   to{
+      transform: translateX(0px);
+      opacity: 1;
+   }
+ }
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 10px ;
+    transition: transform 0.8s linear;
+}
+.links i:hover{
+    color: gold;
+    transform: translateY(-3px);
+}
+.cert{
+  color: white;
+   font-size: 20px; 
+   word-spacing: 5px; 
+   padding: 20px;
+    border-left: 7px solid gold;
+       border-right: 1px solid grey;
+       border-bottom: 1px solid grey;
+       border-top: 1px solid grey;
+      border-radius: 10px;
+}
+.certi{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 20px;
+    /* padding: 50px; */
+    /* border: 2px solid white;
+    border-radius: 20px; */
+     animation: anime2 0.8s linear 1;
+     transition: transform 0.8s linear;
+}
+.certi div:hover{
+    /* color: gold; */
+    transform: translateY(-10px);
+     border: 1px solid gold;
+}
+.achieve{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 30px;
+    padding: 50px;
+     border-radius: 20px;
+     box-shadow: 0px 0px 10px 0px grey;
+    border-radius: 20px;
+     animation: anime2 0.8s linear 1;
+}
+.achieve:hover{
+  border: 1px solid gold;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 50px 50px;
+    flex-direction: column;
+    gap: 50px;
+
+}
+.get{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+.touch{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+ @keyframes anime4 {
+   from{
+      transform: translateY(30px);
+      opacity: 0;
+   }
+   to{
+      transform: translateY(0px);
+      opacity: 1;
+   }
+ }
+.form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+     animation: anime3 0.8s linear 1;
+}
+.formclass{
+    width:600px;
+     height: 50px;
+      padding: 10px;  
+       box-shadow: 0px 0px 5px 0px grey;
+       color: white;
+        border-radius: 10px;
+        background-color: black;
+}
+.formclass:focus{
+    border: 2px solid gold;
+    outline: none;
+}
+button:hover{
+    box-shadow: 0px 0px 10px 0px grey;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 30px;
+}
+@media (min-width:320px) and (max-width:768px) {
+    .home{
+        padding-top: 250px;
+    }
+    .photo{
+        height: 200px;
+    width:200px;
+    border-radius: 50%;
+    border: 10px solid rgb(63, 61, 61);
+    }
+   img{
+    width: 200px;
+    height: 200px;
+  }
+  .cert{
+    padding: 20px 5px;
+  }
+  .about{
+    padding: 30px;
+  }
+  .btech{
+    padding: 35px;
+  }
+  .project{
+    padding: 30px 3px;
+  }
+  .p1{
+    padding: 30px 5px;
+    height: 350px;
+  }
+  .skills{
+    padding: 30px 20px;
+  }
+  .skillset{
+    padding: 20px 5px;
+    width: 250px;
+  }
+  .certificates{
+    padding: 30px 0px;
+  }
+  .certi {
+     padding: 3px;
+  }
+  .achievements{
+    padding: 30px 10px;
+  }
+  .navigations{
+    padding-top: 0px;
+    padding-left: 10px;
+  }
+  .achieve{
+     padding: 30px;
+  }
+  .contact{
+    padding: 30px 10px;
+  }
+  .formclass{
+    width: 300px;
+  }
+}
+@media (min-width:375px) {
+    .cert{
+        padding:20px 10px;
+    }
+    .certi{
+      padding: 15px;
+    }
+    .p1{
+      padding: 50px 20px;
+    }
+}
+@media (min-width:768px) {
+    .home{
+        padding-top: 200px;
+    }
+}
+
