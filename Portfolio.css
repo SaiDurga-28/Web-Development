@@ -6,15 +6,16 @@
 .header{
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
+        background-color: #0A192F;
     justify-content: space-around;
   position: fixed;
-  top: 0;
+  /* border-bottom: 1px groove rgba(240, 248, 255, 0.571); */
+    top: 0;
   width: 100%;
   z-index: 1000;
 }
 .name{
-    color: gold;
+    color: #FFC51E;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
@@ -33,13 +34,13 @@
     cursor: pointer;
 }
 .navigations:hover{
-    color: gold;
+    color: #FFC51E;
 }
 .home{
     display: flex;
     flex-wrap: wrap;
     /* height: 600px; */
-    background-color: black;
+    background-color: #0A192F;
     justify-content: space-around;
     align-items: center;
     gap: 20px;
@@ -54,7 +55,10 @@
     border-radius: 50%;
     border: 15px solid rgb(63, 61, 61);
     animation: anime1 0.8s linear 1;
-    box-shadow: 0px 0px 10px 0px gold;
+    box-shadow: 0px 0px 5px 0px #FFC51E;
+}
+.photo img:hover{
+  transform: scale(1.1);
 }
 .me{
     display: flex;
@@ -65,7 +69,7 @@
     animation: anime1 0.8s linear 1;
 }
 .explore{
-    color: gold;
+    color: #FFC51E;
     border: 3px groove white;
     padding: 10px; width: 100px;
     text-align: center; 
@@ -76,8 +80,8 @@
      text-decoration: none;
 }
 .explore:hover{
-    /* background-color: gold;
-    color: black; */
+    /* background-color: #FFC51E;
+    color: #0A192F; */
     box-shadow: 0px 0px 10px 0px grey;
 }
  @keyframes anime1 {
@@ -93,7 +97,7 @@
 .about{
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: #0A192F;
     /* justify-content: space-around;
     align-items: center; */
     gap: 30px;
@@ -128,12 +132,12 @@
 }
 .btech:hover{
     /* box-shadow: 0px 0px 10px 5px grey; */
-    border: 1px solid gold;
+    border: 1px solid #FFC51E;
  }
 .project{
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: #0A192F;
     /* justify-content: space-around;
     align-items: center; */
     gap: 50px;
@@ -143,7 +147,7 @@
 .projects{
     display: flex;
     flex-wrap: wrap;
-    /* background-color: black; */
+    /* background-color: #0A192F; */
     justify-content: space-around;
     gap: 30px;
     animation: anime3 0.8s linear 1;
@@ -173,14 +177,17 @@
     border: 1px solid grey;
 }
 .p1:hover{
-    box-shadow: 0px 0px 10px 5px grey;
-    border: 1px solid gold;
+    box-shadow: 0px 0px 10px 0px grey;
+    border: 2px solid #FFC51E;
     opacity: 0.9;
  }
+ /* .p1:hover{
+     transform: scale(1);
+    } */
 .skills{
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: #0A192F;
     padding: 50px 50px;
     flex-direction: column;
     gap: 50px;
@@ -188,7 +195,7 @@
 .tskills{
     display: flex;
     flex-wrap: wrap;
-    /* background-color: black; */
+    /* background-color: #0A192F; */
     justify-content: space-around;
     gap: 30px;
     animation: anime4 1s linear 1;
@@ -212,7 +219,7 @@
      align-items: center;
      gap: 20px;
       padding: 50px 15px;
-       border-left: 7px solid gold;
+       border-left: 7px solid #D4A017;
        border-right: 1px solid grey;
        border-bottom: 1px solid grey;
        border-top: 1px solid grey;
@@ -228,7 +235,7 @@
 .certificates,.achievements{
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: #0A192F;
     padding: 50px 50px;
     flex-direction: column;
     gap: 50px;
@@ -250,7 +257,7 @@
     transition: transform 0.8s linear;
 }
 .links i:hover{
-    color: gold;
+    color: #FFC51E;
     transform: translateY(-3px);
 }
 .cert{
@@ -258,7 +265,7 @@
    font-size: 20px; 
    word-spacing: 5px; 
    padding: 20px;
-    border-left: 7px solid gold;
+    border-left: 7px solid #FFC51E;
        border-right: 1px solid grey;
        border-bottom: 1px solid grey;
        border-top: 1px solid grey;
@@ -278,9 +285,10 @@
      transition: transform 0.8s linear;
 }
 .certi div:hover{
-    /* color: gold; */
+    /* color: #FFC51E; */
     transform: translateY(-10px);
-     border: 1px solid gold;
+     border: 1px solid #FFC51E;
+     box-shadow: 0px 0px 10px 0px #FFC51E;
 }
 .achieve{
     display: flex;
@@ -296,12 +304,12 @@
      animation: anime2 0.8s linear 1;
 }
 .achieve:hover{
-  border: 1px solid gold;
+  border: 1px solid #FFC51E;
 }
 .contact{
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: #0A192F;
     padding: 50px 50px;
     flex-direction: column;
     gap: 50px;
@@ -319,6 +327,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 30px;
+   animation: anime3 0.8s linear 1;
 }
  @keyframes anime4 {
    from{
@@ -344,11 +353,12 @@
       padding: 10px;  
        box-shadow: 0px 0px 5px 0px grey;
        color: white;
+       border: 1px solid white;
         border-radius: 10px;
-        background-color: black;
+        background-color: #0A192F;
 }
 .formclass:focus{
-    border: 2px solid gold;
+    border: 2px solid #FFC51E;
     outline: none;
 }
 button:hover{
@@ -357,7 +367,7 @@ button:hover{
 .footer{
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: #0A192F;
     flex-direction: column;
     gap: 20px;
     align-items: center;
@@ -436,7 +446,7 @@ button:hover{
 }
 @media (min-width:768px) {
     .home{
-        padding-top: 200px;
+        padding-top: 180px;
     }
 }
 
