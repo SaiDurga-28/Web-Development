@@ -3,6 +3,7 @@
         <title>Sai Durga Anisetti</title>
         <link rel="stylesheet" href="./Portfolio.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
@@ -17,7 +18,26 @@
                 <a class="navigations" onclick="section4()"><b>Certificates</b></a>
                 <a class="navigations" onclick="section5()"><b>Achievements</b></a>
                 <a class="navigations" onclick="section6()"><b>Contact</b></a>
+                 </div>
+                <div onclick="Open()" style="padding-top: 28px;" class="bars"><i class="fa-solid fa-bars"></i></div>
+                  <div class="menu_options">
+                <span onclick="Close()">&times;</span>
+                <a href="Portfolio.html" class="navigations1"><b>Home</b></a>
+                <a class="navigations1" onclick="section1()"><b>About</b></a>
+                <a class="navigations1" onclick="section2()"><b>Project</b></a>
+                <a class="navigations1" onclick="section3()"><b>Skills</b></a>
+                <a class="navigations1" onclick="section4()"><b>Certificates</b></a>
+                <a class="navigations1" onclick="section5()"><b>Achievements</b></a>
+                <a class="navigations1" onclick="section6()"><b>Contact</b></a>
             </div>
+             <script>
+            function Close(){
+                document.getElementsByClassName("menu_options")[0].style.left="-320px";
+            }
+             function Open(){
+                document.getElementsByClassName("menu_options")[0].style="left:0px";
+            }
+            </script>
             </div>
         </header>
         <section>
@@ -27,7 +47,7 @@
                 </div>
                 <div class="me">
                     <div style="color: white; font-size: 16px;"><b>Hi, I'm</b></div>
-                    <div style="color: #D4A017; font-size: 36px; letter-spacing: 1px;"><b>SAI DURGA ANISETTI</b></div>
+                    <div style="color: #FFC51E; font-size: 36px; letter-spacing: 1px;"><b>SAI DURGA ANISETTI</b></div>
                     <div style="color: white; font-size: 18px; line-height: 25px; word-spacing: 5px; letter-spacing: 1px;"> Aspiring software engineer with a strong foundation in computer science, eager to apply coding and problem
 solving skills to create innovative software solutions. Seeking internships or projects to gain practical experience
  and contribute to a dynamic team’s success</div>
@@ -45,7 +65,7 @@ solving skills to create innovative software solutions. Seeking internships or p
         <section id="sec1">
             <div class="about">
                  <div style="color: white; font-size: 16px;"><b>ABOUT</b></div>
-                 <div style="color: white; font-size: 24px; color:#D4A017"><b>Education</b></div>
+                 <div style="color: white; font-size: 24px; color:#FFC51E"><b>Education</b></div>
                  <div class="btech">
                     <ul style="color: #FFC51E; font-size: 30px;">
                     <li><div style="color: white; font-size: 20px;"> Aditya College Of Engineering And Technology</div>      
@@ -59,7 +79,7 @@ solving skills to create innovative software solutions. Seeking internships or p
                     <div style="color: white; font-size: 20px; padding-top: 10px;">2020-2021</div></li><br/>
                     </ul>
                  </div>
-                 <div style="color: white; font-size: 24px; color:#D4A017"><b>Internships</b></div>
+                 <div style="color: white; font-size: 24px; color:#FFC51E"><b>Internships</b></div>
                  <div class="btech">
                     <div style="color: white; font-size: 20px;"> Technical Hub Pvt Ltd</div>
                     <div style="color: white; font-size: 24px; color:#D4A017;"> <b>FULL STACK DEVELOPMENT with REACT NATIVE</b></div>
@@ -73,7 +93,7 @@ solving skills to create innovative software solutions. Seeking internships or p
         <!-- <hr/> -->
         <section id="sec2">
             <div class="project">
-            <div style="color: white; font-size: 30px; color:#D4A017; text-align: center;"><b>My Projects</b>
+            <div style="color: white; font-size: 30px; color:#FFC51E; text-align: center;"><b>My Projects</b>
             <br/><div style="color: rgba(240, 248, 255, 0.744); font-size: 18px; text-align: center; padding-top: 10px;">Explore my web creations — where inventive design meets cutting-edge development</div></div>
             <div class="projects">
                 <div class="p1">
@@ -82,6 +102,7 @@ solving skills to create innovative software solutions. Seeking internships or p
                     <div style="color: white; font-size: 16px; line-height: 20px; word-spacing: 5px; letter-spacing: 1px;">Created Campus-Connect, a website offering a one-stop platform for students to explore
  campus events, clubs, talents, and news—designed to foster engagement and inspiration. Built a clean,
  responsive frontend using HTML and CSS, delivering a realistic and user-friendly digital experience.</div>
+ <a href="https://github.com/SaiDurga-28/CampusConnect" class="explore1"><b>View</b></a>
                 </div>
                 <div class="p1">
                     <i class="fa-solid fa-building-wheat" style="color: #FFC51E; font-size: 36px;"></i>
@@ -90,6 +111,7 @@ solving skills to create innovative software solutions. Seeking internships or p
  rural communities with practical tools like crop suggestions, weather updates, and pest control guidance.
  It is a user-friendly interface to make farming
  decisions easier and more effective across all sectors.</div>
+ <a href="https://github.com/SaiDurga-28/AgriAssistProject" class="explore1"><b>View</b></a>
                 </div>
                 <div class="p1">
                     <i class="fa-solid fa-address-card" style="color: #FFC51E; font-size: 36px;"></i>
@@ -97,6 +119,7 @@ solving skills to create innovative software solutions. Seeking internships or p
                     <div style="color: white; font-size: 16px; line-height: 20px; word-spacing: 5px; letter-spacing: 1px;">
                         Created a portfolio website using HTML, CSS, and basic JavaScript, It serves as a platform to introduce myself, share my projects, and provide information about me.
                     </div>
+                    <a href="https://github.com/SaiDurga-28/Portfolio" class="explore1"><b>View</b></a>
                 </div>
             </div>
             </div>
@@ -104,7 +127,7 @@ solving skills to create innovative software solutions. Seeking internships or p
         <!-- <hr/> -->
         <section id="sec3">
             <div class="skills">
-                <div style="color: white; font-size: 36px; color:#D4A017; text-align: center;"><b>Skills</b><br/><div style="color: rgba(240, 248, 255, 0.779); font-size: 18px; text-align: center; padding-top: 10px;">Core Competencies & Technical Strengths</div></div>
+                <div style="color: white; font-size: 36px; color:#FFC51E; text-align: center;"><b>Skills</b><br/><div style="color: rgba(240, 248, 255, 0.779); font-size: 18px; text-align: center; padding-top: 10px;">Core Competencies & Technical Strengths</div></div>
                 <div class="tskills">
                 <div class="skillset">
                     <i class="fa-solid fa-laptop" style="color: #FFC51E; font-size: 30px;"></i>
@@ -137,7 +160,7 @@ solving skills to create innovative software solutions. Seeking internships or p
         <!-- <hr/> -->
         <section id="sec4">
             <div class="certificates">
-                <div style="color: white; font-size: 36px; color:#D4A017; text-align: center;"><b>Certificates</b><br/><div style="color: rgba(240, 248, 255, 0.737); font-size: 18px;text-align: center; padding-top: 10px;">Certifications that reflect my commitment to continuous learning and technical excellence</div></div>
+                <div style="color: white; font-size: 36px; color:#FFC51E; text-align: center;"><b>Certificates</b><br/><div style="color: rgba(240, 248, 255, 0.737); font-size: 18px;text-align: center; padding-top: 10px;">Certifications that reflect my commitment to continuous learning and technical excellence</div></div>
                 <div class="certi">
                     <div class="cert"><i class="fa-solid fa-certificate" style="font-size: 13px; color: #FFC51E;"></i> Cisco C,Python,HTML,CSS,JavaScript Essentials 1,2 - <a href="https://drive.google.com/file/d/16OgxL4WC6VnRv9x6Gm-QEDkfgRFb_EB-/view?usp=sharing" style="text-decoration: none; color: #FFC51E;">View</a></div>
                     <div class="cert"><i class="fa-solid fa-certificate" style="font-size: 13px; color: #FFC51E;"></i> Oracle Java Certified Foundations Associate -  <a href="https://drive.google.com/file/d/1IhCnGKWIUdQA9zGL42W1AihfGKQO7EP-/view?usp=sharing" style="text-decoration: none; color: #FFC51E;">View</a></div>
@@ -150,7 +173,7 @@ solving skills to create innovative software solutions. Seeking internships or p
         <!-- <hr/> -->
          <section id="sec5">
             <div class="achievements">
-                <div style="color: white; font-size: 36px; color:#D4A017; text-align: center;"><b>Achievements</b><br/><div style="color: rgba(240, 248, 255, 0.705); font-size: 18px; text-align: center; padding-top: 10px;">Milestones that reflect my dedication to excellence, innovation, and continuous growth</div></div>
+                <div style="color: white; font-size: 36px; color:#FFC51E; text-align: center;"><b>Achievements</b><br/><div style="color: rgba(240, 248, 255, 0.705); font-size: 18px; text-align: center; padding-top: 10px;">Milestones that reflect my dedication to excellence, innovation, and continuous growth</div></div>
                 <div class="achieve">
                     <ul style="color: #FFC51E; font-size: 30px;">
                     <li><div style="color: white; font-size: 20px; padding-top: 15px; word-spacing: 5px;"> Solved 350+ competitive programming problems on Codechef - <a href="https://www.codechef.com/users/saidurga_28" style="text-decoration: none; color: #FFC51E;">Link</a></div></li>
@@ -164,17 +187,17 @@ solving skills to create innovative software solutions. Seeking internships or p
         <!-- <hr/> -->
         <section id="sec6">
             <div class="contact">
-                <div style=" font-size: 36px; color:#D4A017; text-align: center;"><b>Contact</b><br/>
+                <div style=" font-size: 36px; color:#FFC51E; text-align: center;"><b>Contact</b><br/>
                 <div style="color: rgba(240, 248, 255, 0.705); font-size: 18px; text-align: center; padding-top: 10px;">Let’s connect—whether it’s for collaboration, feedback, or just a good tech chat</div></div>
                 <div class="get">
                     <div class="touch">
-                         <div style=" font-size: 24px; color:#FFC51E; text-align: center;"><b>📬 Get in touch with me</b></div>
+                         <div style=" font-size: 24px; color:#D4A017; text-align: center;"><b>📬 Get in touch with me</b></div>
                          <div style="color: white; font-size: 17px;"><i class="fa-solid fa-phone" style="color: #FFC51E;"></i> +91 8978434159</div>
                          <div style="color: white; font-size: 17px;"><i class="fa-solid fa-envelope" style="color: #FFC51E;"></i> saidurgaanisetti9@gmail.com</div>
                          <div style="color: white; font-size: 17px;"><i class="fa-solid fa-location-dot"style="color: #FFC51E;"></i> Andhra Pradesh, India</div>
                     </div>
                 <form class="form">
-                    <label style="color: #FFC51E; font-size: 24px;"><b>✉️ Message Me</b></label>
+                    <label style="color: #D4A017; font-size: 24px;"><b>✉️ Message Me</b></label>
                     <input type="text" placeholder="Enter your name" class="formclass">
                     <input type="email" placeholder="Enter your email" class="formclass">
                     <input type="text" placeholder="Enter your subject" class="formclass">
@@ -202,31 +225,79 @@ solving skills to create innovative software solutions. Seeking internships or p
         {
             const about=document.getElementById("sec1");
             about.scrollIntoView({behavior : "smooth"});
+            // document.getElementsByClassName("menu_options")[0].style.left = "-320px";
+            const menu = document.getElementsByClassName("menu_options")[0];
+  menu.classList.add("instant-hide");
+  setTimeout(() => {
+    menu.classList.remove("instant-hide");
+    menu.style.left = "-320px"; // reset for next open
+  }, 10);
+
         }
         function section2()
         {
             const projects=document.getElementById("sec2");
             projects.scrollIntoView({behavior : "smooth"});
+            //  document.getElementsByClassName("menu_options")[0].style.left = "-320px";
+            const menu = document.getElementsByClassName("menu_options")[0];
+  menu.classList.add("instant-hide");
+  setTimeout(() => {
+    menu.classList.remove("instant-hide");
+    menu.style.left = "-320px"; // reset for next open
+  }, 10);
+
         }
         function section3()
         {
             const skills=document.getElementById("sec3");
             skills.scrollIntoView({behavior : "smooth"});
+            //  document.getElementsByClassName("menu_options")[0].style.left = "-320px";
+            const menu = document.getElementsByClassName("menu_options")[0];
+  menu.classList.add("instant-hide");
+  setTimeout(() => {
+    menu.classList.remove("instant-hide");
+    menu.style.left = "-320px"; // reset for next open
+  }, 10);
+
         }
         function section4()
         {
             const certifications=document.getElementById("sec4");
             certifications.scrollIntoView({behavior : "smooth"});
+            //  document.getElementsByClassName("menu_options")[0].style.left = "-320px";
+            const menu = document.getElementsByClassName("menu_options")[0];
+  menu.classList.add("instant-hide");
+  setTimeout(() => {
+    menu.classList.remove("instant-hide");
+    menu.style.left = "-320px"; // reset for next open
+  }, 10);
+
         }
         function section5()
         {
             const achievements=document.getElementById("sec5");
             achievements.scrollIntoView({behavior : "smooth"});
+            //  document.getElementsByClassName("menu_options")[0].style.left = "-320px";
+            const menu = document.getElementsByClassName("menu_options")[0];
+  menu.classList.add("instant-hide");
+  setTimeout(() => {
+    menu.classList.remove("instant-hide");
+    menu.style.left = "-320px"; // reset for next open
+  }, 10);
+
         }
         function section6()
         {
             const contact=document.getElementById("sec6");
             contact.scrollIntoView({behavior : "smooth"});
+            //  document.getElementsByClassName("menu_options")[0].style.left = "-320px";
+            const menu = document.getElementsByClassName("menu_options")[0];
+  menu.classList.add("instant-hide");
+  setTimeout(() => {
+    menu.classList.remove("instant-hide");
+    menu.style.left = "-320px"; // reset for next open
+  }, 10);
+
         }
         </script>
     </body>
